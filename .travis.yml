@@ -1,0 +1,23 @@
+sudo: required
+language: java
+dist: trusty
+
+cache:
+  directories:
+  - $HOME/.m2
+      
+script:
+ - python run_unittests.py;
+
+before_install:
+ - sudo pip install -r requirements.txt --ignore-installed six
+  
+after_script:
+  - cat target/surefire-reports/TestSuite.txt
+  
+notifications:
+  email:
+    recipients:
+      - meeyun@binary.com
+    on_success: never
+    on_failure: always
