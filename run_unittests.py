@@ -11,6 +11,11 @@ suite = unittest.TestLoader().discover(start_dir=test_dir,pattern='TestBuy.py')
 #unittest.TextTestRunner(verbosity=1).run(suite)
 
 ret = unittest.TextTestRunner(verbosity=1).run(suite).wasSuccessful()
-sys.exit(ret)
+
+if ret is True:
+    sys.exit(0)
+
+else:
+    print (ret)
 
 
