@@ -8,9 +8,9 @@ sys.path.append(os.path.join(sys.path[0],'..'))
 # test_dir = os.path.join(sys.path[0],'testcases')
 test_dir = os.path.join(sys.path[0])
 suite = unittest.TestLoader().discover(start_dir=test_dir,pattern='TestBuy.py')
-unittest.TextTestRunner(verbosity=1).run(suite)
+#unittest.TextTestRunner(verbosity=1).run(suite)
 
-ret = not unittest.TextTestRunner.run(suite).wasSuccessful()
+ret = unittest.TextTestRunner(verbosity=1).run(suite).wasSuccessful()
 sys.exit(ret)
 
 
