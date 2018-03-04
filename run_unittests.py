@@ -16,6 +16,6 @@ if ret is True:
     sys.exit(0)
 
 else:
-    print (ret)
+    sys.exit(1)
 
 
