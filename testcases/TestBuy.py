@@ -47,7 +47,7 @@ class TestBuyContract(unittest.TestCase):
 
     def test_proposal_R_100_touches_contract(self):
         longcode = self.proposal_R_100_touches_contract()['proposal']['longcode']
-        expected_longcode = 'helloWin payout if Volatility 100 Index touches entry spot plus 3.50 through 2 minutes after ' \
+        expected_longcode = 'Win payout if Volatility 100 Index touches entry spot plus 3.50 through 2 minutes after ' \
                             'contract start time.'
 
         self.assertEqual(longcode, expected_longcode)
