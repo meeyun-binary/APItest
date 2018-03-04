@@ -10,4 +10,7 @@ test_dir = os.path.join(sys.path[0])
 suite = unittest.TestLoader().discover(start_dir=test_dir,pattern='TestBuy.py')
 unittest.TextTestRunner(verbosity=1).run(suite)
 
+ret = not runner.run(test_suite).wasSuccessful()
+sys.exit(ret)
+
 
