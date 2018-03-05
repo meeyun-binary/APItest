@@ -8,7 +8,7 @@ test_dir = os.path.join(sys.path[0])
 suite = unittest.TestLoader().discover(start_dir=test_dir,pattern='Test*.py')
 #unittest.TextTestRunner(verbosity=1).run(suite)
 
-ret = unittest.TextTestRunner(verbosity=1).run(suite).wasSuccessful()
+ret = unittest.TextTestRunner(verbosity=2).run(suite).wasSuccessful()
 
 # ret is True(1) when test passes. 
 # so change exit code to 0 when test passes
