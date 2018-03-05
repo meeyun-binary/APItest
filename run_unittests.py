@@ -16,7 +16,7 @@ ret = unittest.TextTestRunner(verbosity=1).run(suite).wasSuccessful()
 if ret is True:
     sys.exit(0)
 
-# travis build will should show fail when exit code is non-zero
+# travis build will show fail when exit code is non-zero
 else:
     sys.exit(1)
 
