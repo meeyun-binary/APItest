@@ -8,7 +8,7 @@ class TestBuyContract(unittest.TestCase):
     def setUp(self):
         self.symbol = "R_100"
         # add sleep time to avoid hitting rate limit
-        time.sleep(0.1)
+        time.sleep(2)
 
     def tearDown(self):
         # selling contract to avoid hitting maximum number of open contract
