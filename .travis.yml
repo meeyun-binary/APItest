@@ -7,13 +7,12 @@ cache:
   - $HOME/.m2
       
 script:
- - python run_unittests.py --reruns 5;
+ - python run_unittests.py;
 
 
 before_install:
  - sudo pip install -r requirements.txt --ignore-installed six
  - sudo pip install websocket-client
- - sudo pip install pytest-rerunfailures
   
 after_script:
   - cat target/surefire-reports/TestSuite.txt
