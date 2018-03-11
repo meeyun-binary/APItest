@@ -7,7 +7,7 @@ cache:
   - $HOME/.m2
       
 script:
- - python run_unittests.py --rerun 5;
+ - python run_unittests.py --reruns 5;
 
 
 before_install:
