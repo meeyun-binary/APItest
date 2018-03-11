@@ -22,6 +22,7 @@ class TestBuyContract(unittest.TestCase):
                                "price": 100
                                })
         result_buy = tu.send_and_receive_ws(json_buy)
+        print(result_buy)
         longcode = result_buy['buy']['longcode']
 
         self.assertEqual(longcode, expected_longcode)
