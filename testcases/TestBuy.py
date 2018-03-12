@@ -33,7 +33,7 @@ class TestBuyContract(unittest.TestCase):
 
         return decorate
 
-    @RateLimited(0.5)
+    @RateLimited(1)
     def buy_and_compare_longcode(self, proposal, expected_longcode):
         print(proposal)
         id = proposal['proposal']['id']
