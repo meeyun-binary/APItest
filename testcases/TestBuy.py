@@ -14,6 +14,8 @@ class TestBuyContract(unittest.TestCase):
         # selling contract to avoid hitting maximum number of open contract
         tu.sell_last_bought_contract()
 
+    # TODO move this decorator to somewhere else so this can be reuse
+    # decorator to avoid hitting rate limit
     def RateLimited(max_per_second):
         minInterval = 1.0 / float(max_per_second)
 
@@ -35,14 +37,12 @@ class TestBuyContract(unittest.TestCase):
 
     @RateLimited(0.25)
     def buy_and_compare_longcode(self, proposal, expected_longcode):
-        print(proposal)
         id = proposal['proposal']['id']
 
         json_buy = json.dumps({"buy": id,
                                "price": 100
                                })
         result_buy = tu.send_and_receive_ws(json_buy)
-        print(result_buy)
         longcode = result_buy['buy']['longcode']
 
         self.assertEqual(longcode, expected_longcode)
