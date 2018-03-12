@@ -8,12 +8,32 @@ class TestBuyContract(unittest.TestCase):
     def setUp(self):
         self.symbol = "R_100"
         # add sleep time to avoid hitting rate limit
-        time.sleep(4)
+        # time.sleep(4)
 
     def tearDown(self):
         # selling contract to avoid hitting maximum number of open contract
         tu.sell_last_bought_contract()
 
+    def RateLimited(max_per_second):
+        minInterval = 1.0 / float(max_per_second)
+
+        def decorate(func):
+            lastTimeCalled = [0.0]
+
+            def rateLimitedFunction(*args, **kargs):
+                elapsed = time.clock() - lastTimeCalled[0]
+                leftToWait = minInterval - elapsed
+                if leftToWait > 0:
+                    time.sleep(leftToWait)
+                ret = func(*args, **kargs)
+                lastTimeCalled[0] = time.clock()
+                return ret
+
+            return rateLimitedFunction
+
+        return decorate
+
+    @RateLimited(0.5)
     def buy_and_compare_longcode(self, proposal, expected_longcode):
         print(proposal)
         id = proposal['proposal']['id']
