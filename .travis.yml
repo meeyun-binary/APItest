@@ -21,6 +21,9 @@ before_install:
  - sudo pip install websocket-client
  - sudo apt-get install libffi-dev
  - sudo pip install pyOpenSSL ndg-httpsclient pyasn1 
+ - sudo pip install pyopenssl ndg-httpsclient pyasn1
+ - sudo pip install ndg-httpsclient pyasn1 --upgrade
+ - sudo pip install requests[security]
 
 
 
