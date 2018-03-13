@@ -2,10 +2,6 @@ sudo: required
 #language: java
 language: python
 
-python:
-  - "2.6"
-  - "2.7"
-
 
 dist: trusty
 
@@ -17,7 +13,7 @@ script:
 # To run on production server
 # - python run_unittests.py;
 # To run on QA
- - python run_unittests.py -s www.binaryqa27.com -a 1003 -t lmmtw76c5gGAwvq;
+- python run_unittests.py -s www.binaryqa27.com -a 1003 -t lmmtw76c5gGAwvq;
 
 
 
