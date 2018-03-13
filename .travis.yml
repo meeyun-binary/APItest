@@ -12,7 +12,7 @@ script:
 # To run on production server
 # - python run_unittests.py;
 # To run on QA
-- python -s www.binaryqa27.com -a 1003 -t lmmtw76c5gGAwvq run_unittests.py ;
+- python run_unittests.py -s 'www.binaryqa27.com' -a 1003 -t 'lmmtw76c5gGAwvq'  
 
 
 
@@ -33,4 +33,4 @@ notifications:
     recipients:
       - meeyun@binary.com
     on_success: never
-    on_failure: always
+    on_failure: never
