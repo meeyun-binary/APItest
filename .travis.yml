@@ -12,15 +12,15 @@ script:
 # To run on production server
 # - python run_unittests.py;
 # To run on QA
-- python run_unittests.py -s 'ws.binaryws.com' -a 1089 -t 'ei5EBsqQan230MG'  
+- python run_unittests.py -s 'www.binaryqa27.com' -a 1003 -t 'lmmtw76c5gGAwvq'  
 
 
 
 before_install:
  - sudo pip install -r requirements.txt --ignore-installed six
  - sudo pip install websocket-client
- - sudo pip install argparse
- 
+ - sudo apt-get install libffi-dev
+ - sudo pip install pyOpenSSL ndg-httpsclient pyasn1 
 
 
 
