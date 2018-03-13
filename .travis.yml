@@ -8,15 +8,17 @@ cache:
       
 script:
 # To run on production server
- - python run_unittests.py;
+# - python run_unittests.py;
 # To run on QA
-# - python run_unittests.py -s www.binaryqa27.com -a 1003 -t lmmtw76c5gGAwvq;
+ - python run_unittests.py -s www.binaryqa27.com -a 1003 -t lmmtw76c5gGAwvq;
 
 
 
 before_install:
  - sudo pip install -r requirements.txt --ignore-installed six
  - sudo pip install websocket-client
+ 
+install:
  - sudo pip install argparse
 
 
