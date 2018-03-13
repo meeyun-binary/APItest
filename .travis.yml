@@ -17,6 +17,7 @@ script:
 
 
 before_install:
+ - sudo pip uninstall pyOpenSSL
  - sudo pip install -r requirements.txt --ignore-installed six
  - sudo pip install websocket-client
  - sudo apt-get install libffi-dev
