@@ -10,9 +10,9 @@ cache:
       
 script: 
 # To run on production server
- - python run_unittests.py;
+# - python run_unittests.py;
 # To run on QA (currently not working in travis. need to check)
-# - python run_unittests.py -s 'www.binaryqa27.com' -a 1003 -t 'xxxxxxxxxxxxx'  
+ - python run_unittests.py -s 'www.binaryqa10.com' -a 1003 -t 'AYy4A5bxXACWJN2'  
 
 
 
