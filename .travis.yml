@@ -1,6 +1,5 @@
 sudo: required
-#language: java
-language: python
+language: java
 
 
 dist: trusty
@@ -9,9 +8,9 @@ cache:
   directories:
   - $HOME/.m2
       
-script: python run_unittests.py -s www.binaryqa27.com -a 1003 -t lmmtw76c5gGAwvq
+script: 
 # To run on production server
-# - python run_unittests.py;
+ - python run_unittests.py;
 # To run on QA
 #- python run_unittests.py -s www.binaryqa27.com -a 1003 -t lmmtw76c5gGAwvq;
 
@@ -22,8 +21,7 @@ before_install:
  - sudo pip install websocket-client
  - sudo pip install argparse
  
-#install:
-# - sudo pip install argparse
+
 
 
   
