@@ -1,13 +1,14 @@
 import json
 from websocket import create_connection
 import time
+import setting
 
-global ws
-ws = create_connection("wss://ws.binaryws.com/websockets/v3?app_id=1089")
+ws = create_connection("wss://{}/websockets/v3?app_id={}".format(setting.args.server, setting.args.app_id))
 
 
 def send_and_receive_ws(json_data):
-    autho = json.dumps({"authorize": "ei5EBsqQan230MG"})
+    autho = json.dumps({"authorize": "{}".format(setting.args.token)})
+
     ws.send(autho)
     ws.recv()
 
