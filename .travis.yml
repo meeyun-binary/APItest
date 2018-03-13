@@ -1,5 +1,5 @@
 sudo: required
-language: java
+language: python
 
 
 dist: trusty
@@ -32,4 +32,4 @@ notifications:
     recipients:
       - meeyun@binary.com
     on_success: never
-    on_failure: never
+    on_failure: always
