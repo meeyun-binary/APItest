@@ -17,7 +17,7 @@ script:
 before_install:
  - sudo pip install -r requirements.txt --ignore-installed six
  - sudo pip install websocket-client
- - sudo pip install requests[security]
+ - sudo pip install -U requests[security]
  
 #install:
 # - sudo pip install argparse
