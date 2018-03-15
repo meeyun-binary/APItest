@@ -2,6 +2,8 @@ import json
 from websocket import create_connection
 import time
 import setting
+import datetime
+
 
 ws = create_connection("wss://{}/websockets/v3?app_id={}".format(setting.args.server, setting.args.app_id))
 
@@ -21,21 +23,39 @@ def send_and_receive_ws(json_data):
     return result_js
 
 # decorator to avoid hitting rate limit
-def RateLimited(max_per_second):
-    minInterval = 1.0 / float(max_per_second)
+def rate_limited(max_per_second):
+    min_interval = 1.0 / float(max_per_second)
 
     def decorate(func):
-        lastTimeCalled = [0.0]
+        last_time_called = [0.0]
 
-        def rateLimitedFunction(*args, **kargs):
-            elapsed = time.clock() - lastTimeCalled[0]
-            leftToWait = minInterval - elapsed
-            if leftToWait > 0:
-                time.sleep(leftToWait)
+        def rate_limited_function(*args, **kargs):
+            elapsed = time.clock() - last_time_called[0]
+            left_to_wait = min_interval - elapsed
+            if left_to_wait > 0:
+                time.sleep(left_to_wait)
             ret = func(*args, **kargs)
-            lastTimeCalled[0] = time.clock()
+            last_time_called[0] = time.clock()
             return ret
 
-        return rateLimitedFunction
+        return rate_limited_function
 
     return decorate
+
+
+def trading_day():
+    check_trading_day = datetime.datetime.today().weekday()
+
+    if check_trading_day < 5:
+        is_trading_day = True
+    else:
+        is_trading_day = False
+
+    return is_trading_day
+
+
+def contract_end_date(duration):
+    today = datetime.datetime.today()
+    end_date_time = today + datetime.timedelta(days=duration)
+    end_date = end_date_time.strftime('%Y-%m-%d')
+    return end_date
