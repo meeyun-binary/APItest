@@ -1,8 +1,8 @@
 import json
-import unittest
 import test_utils as tu
 
-from websocket import create_connection
+# from websocket import create_connection
+
 
 def find_latest_tick(symbol):
     # use tick_history API to get current spot
@@ -16,31 +16,33 @@ def find_latest_tick(symbol):
 
     result_spot = tu.send_and_receive_ws(spot)
     current_spot = result_spot['history']['prices'][0]
+    current_spot = float(current_spot)
 
+    # note the current spot is float type.
     return current_spot
 
-def proposal_call_put(symbol, contract_type):
+def proposal_call_put(symbol, contract_type, duration, duration_unit):
     proposal = json.dumps({"proposal": 1,
                            "amount": "10",
                            "basis": "payout",
                            "contract_type": contract_type,
                            "currency": "USD",
-                           "duration": "1",
-                           "duration_unit": "m",
+                           "duration": duration,
+                           "duration_unit": duration_unit,
                            "symbol": symbol})
 
     proposal_result_js = tu.send_and_receive_ws(proposal)
 
     return proposal_result_js
 
-def proposal_higher_lower(symbol, contract_type, barrier):
+def proposal_higher_lower(symbol, contract_type, barrier, duration, duration_unit):
     proposal = json.dumps({"proposal": 1,
                            "amount": "10",
                            "basis": "payout",
                            "contract_type": contract_type,
                            "currency": "USD",
-                           "duration": "1",
-                           "duration_unit": "m",
+                           "duration": duration,
+                           "duration_unit": duration_unit,
                            "barrier": barrier,
                            "symbol": symbol})
 
@@ -48,14 +50,14 @@ def proposal_higher_lower(symbol, contract_type, barrier):
 
     return proposal_result_js
 
-def proposal_touch_no_touch(symbol, contract_type, barrier):
+def proposal_touch_no_touch(symbol, contract_type, barrier, duration, duration_unit):
     proposal = json.dumps({"proposal": 1,
                            "amount": "100",
                            "basis": "payout",
                            "contract_type": contract_type,
                            "currency": "USD",
-                           "duration": "3",
-                           "duration_unit": "m",
+                           "duration": duration,
+                           "duration_unit": duration_unit,
                            "barrier": barrier,
                            "symbol": symbol
                            })
@@ -64,14 +66,14 @@ def proposal_touch_no_touch(symbol, contract_type, barrier):
 
     return proposal_result_js
 
-def proposal_in_out(symbol, contract_type, barrier, barrier2):
+def proposal_in_out(symbol, contract_type, barrier, barrier2, duration, duration_unit):
     proposal = json.dumps({"proposal": 1,
                            "amount": "100",
                            "basis": "payout",
                            "contract_type": contract_type,
                            "currency": "USD",
-                           "duration": "3",
-                           "duration_unit": "m",
+                           "duration": duration,
+                           "duration_unit": duration_unit,
                            "barrier": barrier,
                            "barrier2": barrier2,
                            "symbol": symbol
@@ -162,3 +164,17 @@ def sell_last_bought_contract():
 
 
     return result_sell_contract
+
+def abs_higher_barrier(current_spot, barrier, decimal_places):
+    # create absolute barriers
+    abs_barrier = current_spot + barrier
+    abs_barrier_formatted = '{0:.{1}f}'.format(abs_barrier, decimal_places)
+
+    return abs_barrier_formatted
+
+def abs_lower_barrier2(current_spot, barrier2, decimal_places):
+    # create absolute barriers
+    abs_barrier2 = current_spot - barrier2
+    abs_barrier_formatted2 = '{0:.{1}f}'.format(abs_barrier2, decimal_places)
+
+    return abs_barrier_formatted2
