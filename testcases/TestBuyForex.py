@@ -27,6 +27,8 @@ class TestBuyContractForex(unittest.TestCase):
         expected_longcode = 'Win payout if AUD/JPY is strictly higher than entry spot at close on ' \
                             '{}.'.format(self.end_date)
 
+        print("test")
+
         tu.buy_and_compare_longcode(proposal, expected_longcode)
 
     def test_buy_put_contract(self):
