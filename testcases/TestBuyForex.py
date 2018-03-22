@@ -3,6 +3,9 @@ import unittest
 import test_utils as tu
 
 
+
+
+
 class TestBuyContractForex(unittest.TestCase):
     def setUp(self):
         # Skip testing on weekend as forex market is closed
