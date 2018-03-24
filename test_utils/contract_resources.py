@@ -203,7 +203,7 @@ def buy_and_compare_longcode(proposal, expected_longcode):
     print_if_error(result_buy)
 
     longcode = result_buy['buy']['longcode']
-    assert longcode, expected_longcode
+    assert longcode == expected_longcode
 
 
 def print_if_error(call):
