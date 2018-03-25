@@ -92,7 +92,7 @@ class TestBuyContract(unittest.TestCase):
 
     def test_buy_no_touch_contract(self):
         current_spot = tu.find_latest_tick(self.symbol)
-        abs_barrier = tu.abs_higher_barrier(current_spot, 3.50, 2)
+        abs_barrier = tu.abs_higher_barrier(current_spot, 5.50, 2)
 
         proposal = tu.proposal_touch_no_touch(symbol=self.symbol,
                                               contract_type="NOTOUCH",
