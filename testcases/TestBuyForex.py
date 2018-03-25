@@ -1,9 +1,5 @@
-import json
 import unittest
 import test_utils as tu
-import nose
-from nose_parameterized import parameterized
-from nose_ittr import IttrMultiplier, ittr
 
 
 class TestBuyContractForex(unittest.TestCase):
@@ -36,8 +32,8 @@ class TestBuyContractForex(unittest.TestCase):
                                         duration=self.duration,
                                         duration_unit=self.duration_unit)
 
-        expected_longcode = 'Win payout if {} is strictly higher than entry spot at close on ' \
-                            '{}.'.format(self.symbol_name, self.end_date)
+        expected_longcode = 'Win payout if {0} is strictly higher than entry spot at close on {1}.' \
+                            .format(self.symbol_name, self.end_date)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -47,8 +43,8 @@ class TestBuyContractForex(unittest.TestCase):
                                         duration=self.duration,
                                         duration_unit=self.duration_unit)
 
-        expected_longcode = 'Win payout if {} is strictly lower than entry spot at close on ' \
-                            '{}.'.format(self.symbol_name, self.end_date)
+        expected_longcode = 'Win payout if {0} is strictly lower than entry spot at close on {1}.' \
+                            .format(self.symbol_name, self.end_date)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -63,8 +59,8 @@ class TestBuyContractForex(unittest.TestCase):
                                             duration_unit=self.duration_unit,
                                             barrier=current_spot)
 
-        expected_longcode = 'Win payout if {} is strictly lower than {} at close on ' \
-                            '{}.'.format(self.symbol_name, current_spot_formatted, self.end_date)
+        expected_longcode = 'Win payout if {0} is strictly lower than {1} at close on {2}.' \
+                            .format(self.symbol_name, current_spot_formatted, self.end_date)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -79,8 +75,8 @@ class TestBuyContractForex(unittest.TestCase):
                                             duration_unit=self.duration_unit,
                                             barrier=current_spot)
 
-        expected_longcode = 'Win payout if {} is strictly higher than {} at close on ' \
-                            '{}.'.format(self.symbol_name, current_spot_formatted, self.end_date)
+        expected_longcode = 'Win payout if {0} is strictly higher than {1} at close on {2}.' \
+                            .format(self.symbol_name, current_spot_formatted, self.end_date)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -94,8 +90,8 @@ class TestBuyContractForex(unittest.TestCase):
                                               duration_unit=self.duration_unit,
                                               barrier=barrier)
 
-        expected_longcode = 'Win payout if {} touches {} through close on ' \
-                            '{}.'.format(self.symbol_name, barrier, self.end_date)
+        expected_longcode = 'Win payout if {0} touches {1} through close on {2}.' \
+                            .format(self.symbol_name, barrier, self.end_date)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -109,8 +105,8 @@ class TestBuyContractForex(unittest.TestCase):
                                               duration_unit=self.duration_unit,
                                               barrier=barrier)
 
-        expected_longcode = 'Win payout if {} does not touch {} through close on ' \
-                            '{}.'.format(self.symbol_name, barrier, self.end_date)
+        expected_longcode = 'Win payout if {0} does not touch {1} through close on {2}.' \
+                            .format(self.symbol_name, barrier, self.end_date)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -126,8 +122,8 @@ class TestBuyContractForex(unittest.TestCase):
                                       barrier=barrier,
                                       barrier2=barrier2)
 
-        expected_longcode = 'Win payout if {} ends strictly between {} to {} at close on ' \
-                            '{}.'.format(self.symbol_name, barrier2, barrier, self.end_date)
+        expected_longcode = 'Win payout if {0} ends strictly between {1} to {2} at close on {3}.' \
+                            .format(self.symbol_name, barrier2, barrier, self.end_date)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -143,8 +139,8 @@ class TestBuyContractForex(unittest.TestCase):
                                       barrier=barrier,
                                       barrier2=barrier2)
 
-        expected_longcode = 'Win payout if {} ends outside {} to {} at close on ' \
-                            '{}.'.format(self.symbol_name, barrier2, barrier, self.end_date)
+        expected_longcode = 'Win payout if {0} ends outside {1} to {2} at close on {3}.' \
+                            .format(self.symbol_name, barrier2, barrier, self.end_date)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -160,8 +156,8 @@ class TestBuyContractForex(unittest.TestCase):
                                       barrier=barrier,
                                       barrier2=barrier2)
 
-        expected_longcode = 'Win payout if {} stays between {} to {} through close on ' \
-                            '{}.'.format(self.symbol_name, barrier2, barrier, self.end_date)
+        expected_longcode = 'Win payout if {0} stays between {1} to {2} through close on {3}.' \
+                            .format(self.symbol_name, barrier2, barrier, self.end_date)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -177,9 +173,7 @@ class TestBuyContractForex(unittest.TestCase):
                                       barrier=barrier,
                                       barrier2=barrier2)
 
-        expected_longcode = 'Win payout if {} goes outside {} to {} through close on ' \
-                            '{}.'.format(self.symbol_name, barrier2, barrier, self.end_date)
+        expected_longcode = 'Win payout if {0} goes outside {1} to {2} through close on {3}.' \
+                            .format(self.symbol_name, barrier2, barrier, self.end_date)
 
         self.assert_longcode(proposal, expected_longcode)
-
-
