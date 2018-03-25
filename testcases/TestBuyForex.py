@@ -2,9 +2,6 @@ import unittest
 import test_utils as tu
 
 
-
-
-
 class TestBuyContractForex(unittest.TestCase):
 
 
