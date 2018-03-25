@@ -1,35 +1,23 @@
 sudo: required
 language: java
-
-
 dist: trusty
-
 cache:
   directories:
-  - $HOME/.m2
-      
-script: 
-# To run on production server
- - python run_unittests.py;
-# To run on QA (this is unable to run on travis. SSLError: [Errno 1].)
-# - python run_unittests.py -s 'www.xxxxxxxx.com' -a xxxx -t 'xxxxxxxxxxxxxxx'  
-
-
-
+  - "$HOME/.m2"
+script:
+- python run_unittests.py;
 before_install:
- - sudo pip install -r requirements.txt --ignore-installed six
- - sudo pip install websocket-client
-
-
-
-
-  
+- sudo pip install -r requirements.txt --ignore-installed six
+- sudo pip install websocket-client
 after_script:
-  - cat target/surefire-reports/TestSuite.txt
-  
+- cat target/surefire-reports/TestSuite.txt
 notifications:
   email:
     recipients:
-      - meeyun@binary.com
+    - meeyun@binary.com
     on_success: never
     on_failure: always
+env:
+  global:
+  - secure: ImW/7JAstN6WvSG40szEEZr+eOdQjFrovb2d+5nPg9LtebqyeCcMOISkEwsflUR/vQRC1ht481fyZjFhjx88bTEEzZo0wLrDwm4NtRpHLM/e3S4fD5N72Bpjszpu/n498C3VBD6bXh+8AHyrehXC2SyPhSURi8aSxdq/NHevbIeD+AVyeo7404IJ/IICo4yjyZpJq0CqEvX/58aSGWcD6UWHoT3DYcnVUuJzGDDtIFNMEfPuf1CrYv1ByHrG4RjpT1O1ehmhSWxWQf9j+14A9m021Q+jKlVmY5aFK0bMfuFuEVtskLauzPnmgD3twlWyYsqEjvfukHNOta8tRWg4lPtnSVrQa3XyRycdDPXJh39E+GeunksItt1zRcH7/LbQMIVBuqCV59FvzkLhqLr9iBpMETc7uD+n1HV1S72TaUQCsxfCiRa47MzZphiHJrIslzif6y7q0TJJnn7XERpoeotnmdYxSHDQ/n094HmMZcXAov6dBmeuRoDaqd6+KTyxuLFMN57O5nRfLVg/5BWc3bBi0b03c34570A08yRm+cgqF28E2wARcRgAuzqfq0FfQAL2WbSqlcEYaURH/hHP8caMB6UYNtEobDG6gUfvDFyUWlwv+XfHjGstrwJwY2fQAgCXfYb/EGgvogfwqIrrbBlb1G8nJ/LXdQRY6s9Nrzw=
+  - secure: OUzxHtCeB7rOMqzv6IKzxRZKeQ3Sj9k1fkC8UqiYGb2dvvA++t2+AJi/HQIXpD1GvcSGCpBVtjLDcLRyjumZGW4WpS0BXKl2lkON7xpz9mvwXGTbEd4cytNPizJoDXabOWQUIB8unu1KTNRwsVHlRI2B3n0CbZ2LFMFaZwA+8MbQKpIuJAj1PFQjyEpIS4aqKqI69gXRuiKBPTw3zZ7qVTnbb4mNLOBTqmstgrIxqFjqb8s5UiTuoM/X775vZngYGlvwzePOcsSCLX9MW49rFHr6i6FbPBqYlz/LZDZnSC6vX1jpNQFVv0AjiNJtMA7I0dAMmI9ZSW7/WC3c8npDbwHZjIv0N91r5KzZWGPDFUxymzzUUY732+3rPIaqeTwwlXI3n+k0nxLVxNxArXBayv1GvRx3Asr0ndCPN0O4UJbjhlTl6LbpL0zbAZXwHeREL8GQqnkcUwhKy7oHkIfALHFPGmLNg2qZb3aTFEDyGMIbvDazIoXyeapCf5t5X5+fbA5nTBcw19sKWbGIgIiFYbuH70edLc7cP7qsC3QFDq/CrTgqh7xneyy1SQ6Afx0y1x05x8e5nOklcATySUumipru6TYNf7EX5XsFJi+2Rf5KXngMkeSZoCJYrDD8VlM6CE+ZuPcfW9fF0L5P3uY1uJSNOVu3vQlpGqCZcj+zPLk=

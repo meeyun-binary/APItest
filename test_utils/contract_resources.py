@@ -1,5 +1,6 @@
 import json
 import test_utils as tu
+import pytest
 
 
 # from websocket import create_connection
@@ -191,7 +192,7 @@ def abs_lower_barrier2(current_spot, barrier2, decimal_places):
 
 
 @tu.rate_limited(0.35)
-def buy_and_compare_longcode(proposal, expected_longcode):
+def buy(proposal):
     print_if_error(proposal)
     id = proposal['proposal']['id']
 
@@ -202,8 +203,9 @@ def buy_and_compare_longcode(proposal, expected_longcode):
 
     print_if_error(result_buy)
 
-    longcode = result_buy['buy']['longcode']
-    assert longcode, expected_longcode
+    result_longcode = result_buy['buy']['longcode']
+
+    return result_longcode
 
 
 def print_if_error(call):
