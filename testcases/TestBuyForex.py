@@ -4,7 +4,6 @@ import test_utils as tu
 
 class TestBuyContractForex(unittest.TestCase):
 
-
     def setUp(self):
         # Duration:7d to make sure contract is sell-able and its end date is on trading day
         self.symbol = "frxEURJPY"
