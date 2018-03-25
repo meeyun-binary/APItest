@@ -10,17 +10,17 @@ import argparse
 
 parser = argparse.ArgumentParser()
 
-# add QA
+# QA
 parser.add_argument('-s', action='store',
                     dest='server',
                     help="Testing server. E.g. 'www.binaryqa20.com'",
                     default = "ws.binaryws.com")
-# add App ID
+# App ID
 parser.add_argument('-a', action='store',
                     dest='app_id',
                     help="App ID. E.g. 1003",
                     default = 1089)
-# add token
+# Token
 parser.add_argument('-t', action='store',
                     dest='token',
                     help="App token E.g. 'ei5EBsqQan230MG'",

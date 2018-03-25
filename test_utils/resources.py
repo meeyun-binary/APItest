@@ -43,15 +43,18 @@ def rate_limited(max_per_second):
     return decorate
 
 
-def trading_day():
-    check_trading_day = datetime.datetime.today().weekday()
 
-    if check_trading_day < 5:
-        is_trading_day = True
-    else:
-        is_trading_day = False
+def trading_day(symbol):
+    # if symbol is not Volatility, check if today is trading day
+    if 'R_' not in symbol:
+        check_trading_day = datetime.datetime.today().weekday()
 
-    return is_trading_day
+        if check_trading_day < 5:
+            is_trading_day = True
+        else:
+            is_trading_day = False
+
+        return is_trading_day
 
 
 def contract_end_date(duration):
