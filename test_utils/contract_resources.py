@@ -208,7 +208,7 @@ def buy(proposal):
     return result_longcode
 
 
-@tu.rate_limited_proposal(1.30)
+# @tu.rate_limited_proposal(1.30)
 def proposal(proposal):
     proposal_result_js = tu.send_and_receive_ws(proposal)
 

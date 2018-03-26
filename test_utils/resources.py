@@ -42,6 +42,7 @@ def rate_limited_proposal(max_per_second):
         return rate_limited_function
     return decorate
 
+
 # decorator to avoid hitting rate limit
 def rate_limited_buy(max_per_second):
     min_interval = 1.0 / float(max_per_second)
