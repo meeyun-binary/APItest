@@ -22,6 +22,7 @@ def send_and_receive_ws(json_data):
 
     return result_js
 
+
 # decorator to avoid hitting rate limit
 def rate_limited(max_per_second):
     min_interval = 1.0 / float(max_per_second)
@@ -39,9 +40,7 @@ def rate_limited(max_per_second):
             return ret
 
         return rate_limited_function
-
     return decorate
-
 
 
 def trading_day(symbol):
