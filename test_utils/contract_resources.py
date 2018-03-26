@@ -191,7 +191,7 @@ def abs_lower_barrier2(current_spot, barrier2, decimal_places):
     return abs_barrier_formatted2
 
 
-@tu.rate_limited(0.32)
+@tu.rate_limited(0.30)
 def buy(proposal):
     print_if_error(proposal)
     id = proposal['proposal']['id']
@@ -208,7 +208,7 @@ def buy(proposal):
     return result_longcode
 
 
-@tu.rate_limited(1.32)
+@tu.rate_limited(1.30)
 def proposal(proposal):
     proposal_result_js = tu.send_and_receive_ws(proposal)
 
