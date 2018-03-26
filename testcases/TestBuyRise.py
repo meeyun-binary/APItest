@@ -11,6 +11,10 @@ test_data = \
                               ("frxAUDJPY", "CALL", 15, "m"),
                               ("frxAUDJPY", "CALL", 3, "h"),
                               ("frxAUDJPY", "CALL", 7, "d"),
+                              ("frxAUDCAD", "CALL", 3, "m"),
+                              ("frxAUDCAD", "CALL", 3, "h"),
+                              ("frxAUDCAD", "CALL", 7, "d"),
+
                               ],
      }
 
@@ -39,6 +43,7 @@ class TestBuyRise(unittest.TestCase):
                                             duration=duration,
                                             duration_unit=duration_unit)
 
+            tu.print_if_error(proposal)
             self.assertTrue('error' not in proposal)
 
 
