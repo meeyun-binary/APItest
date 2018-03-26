@@ -191,7 +191,7 @@ def abs_lower_barrier2(current_spot, barrier2, decimal_places):
     return abs_barrier_formatted2
 
 
-@tu.rate_limited_buy(0.30)
+@tu.rate_limited(20)
 def buy(proposal):
     print_if_error(proposal)
     id = proposal['proposal']['id']
