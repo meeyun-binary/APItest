@@ -16,9 +16,9 @@ test_data = \
 
 
 def rise_test_template(*args):
-    def foo(self):
+    def rise_assert(self):
         self.assert_proposal(*args)
-    return foo
+    return rise_assert
 
 
 class TestBuyRise(unittest.TestCase):

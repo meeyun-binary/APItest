@@ -57,7 +57,7 @@ def trading_day(symbol):
     else:
         is_trading_day = True
 
-        return is_trading_day
+    return is_trading_day
 
 
 def contract_end_date(duration):
