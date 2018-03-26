@@ -22,9 +22,30 @@ def send_and_receive_ws(json_data):
 
     return result_js
 
+
 # decorator to avoid hitting rate limit
-def rate_limited(max_per_second):
-    min_interval = 1.0 / float(max_per_second)
+# def rate_limited_proposal(max_per_second):
+#     min_interval = 1.0 / float(max_per_second)
+#
+#     def decorate(func):
+#         last_time_called = [0.0]
+#
+#         def rate_limited_function(*args, **kargs):
+#             elapsed = time.clock() - last_time_called[0]
+#             left_to_wait = min_interval - elapsed
+#             if left_to_wait > 0:
+#                 time.sleep(left_to_wait)
+#             ret = func(*args, **kargs)
+#             last_time_called[0] = time.clock()
+#             return ret
+#
+#         return rate_limited_function
+#     return decorate
+
+
+# decorator to avoid hitting rate limit
+def rate_limited(max_per_minute):
+    min_interval = 60.0 / float(max_per_minute)
 
     def decorate(func):
         last_time_called = [0.0]
@@ -39,15 +60,13 @@ def rate_limited(max_per_second):
             return ret
 
         return rate_limited_function
-
     return decorate
-
 
 
 def trading_day(symbol):
     # if symbol is not Volatility, check if today is trading day
+    check_trading_day = datetime.datetime.today().weekday()
     if "R_" not in symbol:
-        check_trading_day = datetime.datetime.today().weekday()
 
         if check_trading_day < 5:
             is_trading_day = True
@@ -57,7 +76,7 @@ def trading_day(symbol):
     else:
         is_trading_day = True
 
-        return is_trading_day
+    return is_trading_day
 
 
 def contract_end_date(duration):

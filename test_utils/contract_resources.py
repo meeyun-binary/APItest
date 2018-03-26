@@ -16,7 +16,7 @@ def find_latest_tick(symbol):
                        "count": 1
                        })
 
-    result_spot = tu.send_and_receive_ws(spot)
+    result_spot = tu.proposal(spot)
     current_spot = result_spot['history']['prices'][0]
     current_spot = float(current_spot)
 
@@ -34,7 +34,7 @@ def proposal_call_put(symbol, contract_type, duration, duration_unit):
                            "duration_unit": duration_unit,
                            "symbol": symbol})
 
-    proposal_result_js = tu.send_and_receive_ws(proposal)
+    proposal_result_js = tu.proposal(proposal)
 
     return proposal_result_js
 
@@ -50,7 +50,7 @@ def proposal_higher_lower(symbol, contract_type, barrier, duration, duration_uni
                            "barrier": barrier,
                            "symbol": symbol})
 
-    proposal_result_js = tu.send_and_receive_ws(proposal)
+    proposal_result_js = tu.proposal(proposal)
 
     return proposal_result_js
 
@@ -67,7 +67,7 @@ def proposal_touch_no_touch(symbol, contract_type, barrier, duration, duration_u
                            "symbol": symbol
                            })
 
-    proposal_result_js = tu.send_and_receive_ws(proposal)
+    proposal_result_js = tu.proposal(proposal)
 
     return proposal_result_js
 
@@ -85,7 +85,7 @@ def proposal_in_out(symbol, contract_type, barrier, barrier2, duration, duration
                            "symbol": symbol
                            })
 
-    proposal_result_js = tu.send_and_receive_ws(proposal)
+    proposal_result_js = tu.proposal(proposal)
 
     return proposal_result_js
 
@@ -100,7 +100,7 @@ def proposal_asian_up_down(symbol, contract_type):
                            "duration_unit": "t",
                            "symbol": symbol})
 
-    proposal_result_js = tu.send_and_receive_ws(proposal)
+    proposal_result_js = tu.proposal(proposal)
 
     return proposal_result_js
 
@@ -116,7 +116,7 @@ def proposal_digit(symbol, contract_type):
                            "barrier": 5,
                            "symbol": symbol})
 
-    proposal_result_js = tu.send_and_receive_ws(proposal)
+    proposal_result_js = tu.proposal(proposal)
 
     return proposal_result_js
 
@@ -131,7 +131,7 @@ def proposal_digit_even_odd(symbol, contract_type):
                            "duration_unit": "t",
                            "symbol": symbol})
 
-    proposal_result_js = tu.send_and_receive_ws(proposal)
+    proposal_result_js = tu.proposal(proposal)
 
     return proposal_result_js
 
@@ -146,7 +146,7 @@ def proposal_lookback(symbol, contract_type):
                            "duration_unit": "m",
                            "symbol": symbol})
 
-    proposal_result_js = tu.send_and_receive_ws(proposal)
+    proposal_result_js = tu.proposal(proposal)
 
     return proposal_result_js
 
@@ -191,7 +191,7 @@ def abs_lower_barrier2(current_spot, barrier2, decimal_places):
     return abs_barrier_formatted2
 
 
-@tu.rate_limited(0.35)
+@tu.rate_limited(20)
 def buy(proposal):
     print_if_error(proposal)
     id = proposal['proposal']['id']
@@ -206,6 +206,13 @@ def buy(proposal):
     result_longcode = result_buy['buy']['longcode']
 
     return result_longcode
+
+
+# @tu.rate_limited_proposal(1.30)
+def proposal(proposal):
+    proposal_result_js = tu.send_and_receive_ws(proposal)
+
+    return proposal_result_js
 
 
 def print_if_error(call):
