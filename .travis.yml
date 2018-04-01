@@ -31,5 +31,6 @@ notifications:
   email:
     recipients:
       - meeyun@binary.com
+      - my_choong11@hotmail.com
     on_success: never
     on_failure: always
