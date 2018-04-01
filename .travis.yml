@@ -14,15 +14,9 @@ script:
 # To run on QA (this is unable to run on travis. SSLError: [Errno 1].)
 # - python run_unittests.py -s 'www.xxxxxxxx.com' -a xxxx -t 'xxxxxxxxxxxxxxx'
 
-
-
 before_install:
  - sudo pip install -r requirements.txt --ignore-installed six
  - sudo pip install websocket-client
-
-
-
-
 
 after_script:
   - cat target/surefire-reports/TestSuite.txt
