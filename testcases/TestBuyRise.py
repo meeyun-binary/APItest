@@ -36,8 +36,8 @@ test_data = \
     }
 
 missing_parameter_message = \
-    {"amount": "Invalid stake/payout.",
-     "basis": "Invalid stake/payout.",
+    {"amount": "Input validation failed: amount",
+     "basis": "Input validation failed: basis",
      "contract_type": "Input validation failed: contract_type",
      "currency": "Input validation failed: currency",
      "duration": "Missing required contract parameters (date_expiry or duration).",
