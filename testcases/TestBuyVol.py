@@ -240,7 +240,7 @@ class TestBuyContract(unittest.TestCase):
 
     def test_buy_reset_call_contract(self):
         # temporarily avoid rate limit
-        time.sleep(4)
+        time.sleep(6)
         # Reset contract is set as No business for now!
         contract_type = "RESETCALL"
 
