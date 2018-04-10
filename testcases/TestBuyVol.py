@@ -1,5 +1,7 @@
 import unittest
 import test_utils as tu
+import json
+import time
 
 
 class TestBuyContract(unittest.TestCase):
@@ -8,9 +10,9 @@ class TestBuyContract(unittest.TestCase):
         self.symbol = "R_100"
         self.duration = "3"
         self.duration_unit = "m"
-        
+
         self.symbol_name = tu.vol[self.symbol]
-        self.contract_duration = self.duration+" "+tu.duration[self.duration_unit]
+        self.contract_duration = self.duration + " " + tu.duration[self.duration_unit]
 
     def tearDown(self):
         # selling contract to avoid hitting maximum number of open contract
@@ -28,8 +30,8 @@ class TestBuyContract(unittest.TestCase):
                                         duration_unit=self.duration_unit)
 
         expected_longcode = 'Win payout if {0} is strictly higher than entry spot at {1} ' \
-                            'after contract start time.'\
-                            .format(self.symbol_name, self.contract_duration)
+                            'after contract start time.' \
+            .format(self.symbol_name, self.contract_duration)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -40,7 +42,7 @@ class TestBuyContract(unittest.TestCase):
                                         duration_unit=self.duration_unit)
         expected_longcode = 'Win payout if {0} is strictly lower than entry spot at {1} ' \
                             'after contract start time.' \
-                            .format(self.symbol_name, self.contract_duration)
+            .format(self.symbol_name, self.contract_duration)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -55,8 +57,8 @@ class TestBuyContract(unittest.TestCase):
                                             duration_unit=self.duration_unit,
                                             barrier=current_spot)
         expected_longcode = 'Win payout if {0} is strictly lower than {1} ' \
-                            'at {2} after contract start time.'\
-                            .format(self.symbol_name, current_spot_formatted, self.contract_duration)
+                            'at {2} after contract start time.' \
+            .format(self.symbol_name, current_spot_formatted, self.contract_duration)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -72,7 +74,7 @@ class TestBuyContract(unittest.TestCase):
                                             barrier=current_spot)
         expected_longcode = 'Win payout if {0} is strictly higher than {1} ' \
                             'at {2} after contract start time.' \
-                            .format(self.symbol_name, current_spot_formatted, self.contract_duration)
+            .format(self.symbol_name, current_spot_formatted, self.contract_duration)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -86,7 +88,7 @@ class TestBuyContract(unittest.TestCase):
                                               duration_unit=self.duration_unit,
                                               barrier=abs_barrier)
         expected_longcode = 'Win payout if {0} touches {1} through {2} after contract start time.' \
-                            .format(self.symbol_name, abs_barrier, self.contract_duration)
+            .format(self.symbol_name, abs_barrier, self.contract_duration)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -101,7 +103,7 @@ class TestBuyContract(unittest.TestCase):
                                               barrier=abs_barrier)
 
         expected_longcode = 'Win payout if {0} does not touch {1} through {2} after contract start time.' \
-                            .format(self.symbol_name, abs_barrier, self.contract_duration)
+            .format(self.symbol_name, abs_barrier, self.contract_duration)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -114,8 +116,8 @@ class TestBuyContract(unittest.TestCase):
                                       barrier2="-4.50")
 
         expected_longcode = 'Win payout if {0} ends strictly between entry spot minus 4.50 to ' \
-                            'entry spot plus 3.50 at {1} after contract start time.'\
-                            .format(self.symbol_name, self.contract_duration)
+                            'entry spot plus 3.50 at {1} after contract start time.' \
+            .format(self.symbol_name, self.contract_duration)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -129,7 +131,7 @@ class TestBuyContract(unittest.TestCase):
 
         expected_longcode = 'Win payout if {0} ends outside entry spot minus 4.50 to entry spot ' \
                             'plus 3.50 at {1} after contract start time.' \
-                            .format(self.symbol_name, self.contract_duration)
+            .format(self.symbol_name, self.contract_duration)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -142,7 +144,7 @@ class TestBuyContract(unittest.TestCase):
                                       barrier2="-4.5")
         expected_longcode = 'Win payout if {0} stays between entry spot minus 4.50 and entry spot ' \
                             'plus 3.50 through {1} after contract start time.' \
-                            .format(self.symbol_name, self.contract_duration)
+            .format(self.symbol_name, self.contract_duration)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -155,7 +157,7 @@ class TestBuyContract(unittest.TestCase):
                                       barrier2="-25.6")
         expected_longcode = 'Win payout if {0} goes outside entry spot minus 25.60 and entry ' \
                             'spot plus 23.40 through {1} after contract start time.' \
-                            .format(self.symbol_name, self.contract_duration)
+            .format(self.symbol_name, self.contract_duration)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -176,14 +178,14 @@ class TestBuyContract(unittest.TestCase):
     def test_buy_digit_match_contract(self):
         proposal = tu.proposal_digit(self.symbol, "DIGITMATCH")
         expected_longcode = 'Win payout if the last digit of {} is 5 after 5 ticks.' \
-                            .format(self.symbol_name)
+            .format(self.symbol_name)
 
         self.assert_longcode(proposal, expected_longcode)
 
     def test_buy_digit_diff_contract(self):
         proposal = tu.proposal_digit(self.symbol, "DIGITDIFF")
         expected_longcode = 'Win payout if the last digit of {} is not 5 after 5 ticks.' \
-                            .format(self.symbol_name)
+            .format(self.symbol_name)
 
         self.assert_longcode(proposal, expected_longcode)
 
@@ -204,34 +206,58 @@ class TestBuyContract(unittest.TestCase):
     def test_buy_digit_even_contract(self):
         proposal = tu.proposal_digit_even_odd(self.symbol, "DIGITEVEN")
         expected_longcode = 'Win payout if the last digit of {} is even after 5 ticks.' \
-                            .format(self.symbol_name)
+            .format(self.symbol_name)
 
         self.assert_longcode(proposal, expected_longcode)
 
     def test_buy_digit_odd_contract(self):
         proposal = tu.proposal_digit_even_odd(self.symbol, "DIGITODD")
         expected_longcode = 'Win payout if the last digit of {} is odd after 5 ticks.' \
-                            .format(self.symbol_name)
+            .format(self.symbol_name)
 
         self.assert_longcode(proposal, expected_longcode)
 
     def test_buy_lookback_high_close_contract(self):
         proposal = tu.proposal_lookback(self.symbol, "LBFLOATPUT")
-        expected_longcode = 'Win USD 1 times {}\'s high minus close over the next 1 minute.'\
-                            .format(self.symbol_name)
+        expected_longcode = 'Win USD 1 times {}\'s high minus close over the next 1 minute.' \
+            .format(self.symbol_name)
 
         self.assert_longcode(proposal, expected_longcode)
 
     def test_buy_lookback_close_low_contract(self):
         proposal = tu.proposal_lookback(self.symbol, "LBFLOATCALL")
         expected_longcode = 'Win USD 1 times {}\'s close minus low over the next 1 minute.' \
-                            .format(self.symbol_name)
+            .format(self.symbol_name)
 
         self.assert_longcode(proposal, expected_longcode)
 
     def test_buy_lookback_high_low_contract(self):
         proposal = tu.proposal_lookback(self.symbol, "LBHIGHLOW")
-        expected_longcode = 'Win USD 1 times {}\'s high minus low over the next 1 minute.'\
-                            .format(self.symbol_name)
+        expected_longcode = 'Win USD 1 times {}\'s high minus low over the next 1 minute.' \
+            .format(self.symbol_name)
 
         self.assert_longcode(proposal, expected_longcode)
+
+    def test_buy_reset_call_contract(self):
+        # temporarily avoid rate limit
+        time.sleep(4)
+        # Reset contract is set as No business for now!
+        contract_type = "RESETCALL"
+
+        buy = json.dumps({"buy": "1",
+                          "price": 100,
+                          "parameters": {
+                              "amount": 10,
+                              "basis": "payout",
+                              "currency": "USD",
+                              "duration": 4,
+                              "duration_unit": "t",
+                              "contract_type": contract_type,
+                              "symbol": self.symbol}
+                          })
+        buy_result_js = tu.send_and_receive_ws(buy)
+
+        expected_error_message = 'This trade is temporarily unavailable.'
+        error_message = buy_result_js['error']['message']
+
+        self.assertEqual(error_message, expected_error_message)
