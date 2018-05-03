@@ -150,6 +150,19 @@ def proposal_lookback(symbol, contract_type):
 
     return proposal_result_js
 
+def proposal_reset(symbol, contract_type):
+    proposal = json.dumps({"proposal": 1,
+                           "amount": "1",
+                           "basis": "payout",
+                           "contract_type": contract_type,
+                           "currency": "USD",
+                           "duration": "5",
+                           "duration_unit": "t",
+                           "symbol": symbol})
+
+    proposal_result_js = tu.send_and_receive_ws(proposal)
+
+    return proposal_result_js
 
 def sell_last_bought_contract():
     json_contract_id = json.dumps({"portfolio": 1})

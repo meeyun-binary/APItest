@@ -239,25 +239,9 @@ class TestBuyContract(unittest.TestCase):
         self.assert_longcode(proposal, expected_longcode)
 
     def test_buy_reset_call_contract(self):
-        # temporarily avoid rate limit
-        time.sleep(6)
-        # Reset contract is set as No business for now!
-        contract_type = "RESETCALL"
+        proposal = tu.proposal_reset(self.symbol, "RESETCALL")
+        expected_longcode = 'Win payout if {} after 5 ticks is strictly higher ' \
+                'than it was at either entry or 2 ticks.' \
+            .format(self.symbol_name)
 
-        buy = json.dumps({"buy": "1",
-                          "price": 100,
-                          "parameters": {
-                              "amount": 10,
-                              "basis": "payout",
-                              "currency": "USD",
-                              "duration": 4,
-                              "duration_unit": "t",
-                              "contract_type": contract_type,
-                              "symbol": self.symbol}
-                          })
-        buy_result_js = tu.send_and_receive_ws(buy)
-
-        expected_error_message = 'This trade is temporarily unavailable.'
-        error_message = buy_result_js['error']['message']
-
-        self.assertEqual(error_message, expected_error_message)
+        self.assert_longcode(proposal, expected_longcode)
