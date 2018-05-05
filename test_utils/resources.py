@@ -67,50 +67,6 @@ def contract_end_date(duration):
     return end_date
 
 
-# -------------------
-# compare dictionary
-# -------------------
-
-def id_dict(obj):
-    return obj.__class__.__name__ == 'dict'
-
-
-def contains_key_rec(v_key, v_dict):
-    for curKey in v_dict:
-        if curKey == v_key or (id_dict(v_dict[curKey]) and contains_key_rec(v_key, v_dict[curKey])):
-            return True
-    return False
-
-def get_value_rec(v_key, v_dict):
-    for curKey in v_dict:
-        if curKey == v_key:
-            return v_dict[curKey]
-        elif id_dict(v_dict[curKey]) and get_value_rec(v_key, v_dict[curKey]):
-            return contains_key_rec(v_key, v_dict[curKey])
-
-def compare_dict(d1, d2):
-    for key in d1:
-     if contains_key_rec(key, d2):
-         d2_value = get_value_rec(key, d2)
-         if d1[key] == d2_value:
-             # print("values are equal, d1: " + str(d1[key]) + ", d2: " + str(d2_value))
-             pass
-         else:
-             print("values are not equal:\n"
-                   "list1: " + str(d1[key]) + "\n" +
-                   "list2: " + str(d2_value))
-
-     else:
-         print("dict d2 does not contain key: " + key)
-
-    for key in d2:
-     if not contains_key_rec(key, d1):
-         print("dict d1 does not contain key: " + key)
-
-# --------------------------
-# end of compare dictionary
-# --------------------------
-
 def compare_data(source_data_a, source_data_b):
     def compare(data_a, data_b):
         # type=list
@@ -148,10 +104,7 @@ def compare_data(source_data_a, source_data_b):
                         (dict_key not in data_b) or
                         (not compare(dict_value, data_b[dict_key]))
                 ):
-                    print(dict_value)
-                    print(data_b[dict_key])
-                    # print("'{0}: {1}' should exists/correct in dict 2".format(dict_key, dict_value))
-
+                    print("'{0}: {1}' should exists/correct in dict 2".format(dict_key, dict_value))
                     return False
 
             # dictionary identical
