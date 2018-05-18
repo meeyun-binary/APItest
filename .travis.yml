@@ -1,0 +1,30 @@
+sudo: required
+language: java
+
+
+dist: trusty
+
+cache:
+  directories:
+  - $HOME/.m2
+
+script:
+# To run on production server
+ - python run_unittests.py;
+# To run on QA (this is unable to run on travis. SSLError: [Errno 1].)
+# - python run_unittests.py -s 'www.xxxxxxxx.com' -a xxxx -t 'xxxxxxxxxxxxxxx'
+
+before_install:
+ - sudo pip install -r requirements.txt --ignore-installed six
+ - sudo pip install websocket-client
+
+after_script:
+  - cat target/surefire-reports/TestSuite.txt
+
+notifications:
+  email:
+    recipients:
+      - meeyun@binary.com
+      - my_choong11@hotmail.com
+    on_success: never
+    on_failure: always
