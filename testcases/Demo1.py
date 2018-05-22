@@ -21,7 +21,7 @@ class TestSimplest(unittest.TestCase):
         # authorise API token
         authorise = json.dumps(
             {
-                "authorize": "ei5EBsqQan230MG"
+                "authorize": "XXXX"
             }
         )
 
