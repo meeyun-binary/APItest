@@ -11,7 +11,7 @@ class TestLandingCompany(unittest.TestCase):
     def tearDown(self):
         return
 
-    @unittest.skip
+    @unittest.skip("pending to update")
     def test_indonesia(self):
         indonesia = json.dumps({
             "landing_company": "id"
