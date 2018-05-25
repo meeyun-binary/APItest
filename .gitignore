@@ -1,0 +1,5 @@
+#ignore
+setting.py
+.idea
+.DS_Store
+
