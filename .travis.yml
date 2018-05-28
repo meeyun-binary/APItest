@@ -1,25 +1,27 @@
 sudo: required
 language: java
+
+
 dist: trusty
+
 cache:
   directories:
-  - "$HOME/.m2"
+  - $HOME/.m2
+
 script:
-- python run_unittests.py;
+ - python run_unittests.py;
+
 before_install:
-- openssl aes-256-cbc -K $encrypted_5299dd8ed6f7_key -iv $encrypted_5299dd8ed6f7_iv
-  -in setting.py.enc -out test_utils/setting.py -d
-- sudo pip install -r requirements.txt --ignore-installed six
-- sudo pip install websocket-client
+ - sudo pip install -r requirements.txt --ignore-installed six
+ - sudo pip install websocket-client
+
 after_script:
-- cat target/surefire-reports/TestSuite.txt
+  - cat target/surefire-reports/TestSuite.txt
+
 notifications:
   email:
     recipients:
-    - meeyun@binary.com
-    - my_choong11@hotmail.com
+      - meeyun@binary.com
+      - my_choong11@hotmail.com
     on_success: never
     on_failure: always
-env:
-  global:
-    secure: oOwXYYz+yu4KUOSMLWoyOKGBDk9hFgrojYhMFg6OE7gCGyt4Qh+5XZ47cYnvYrc4FXNFNWVEYxbCte9Ev8z7NzQEYB2fNGNWSjEurgcbmROQgdrEq0vqLLquKeaODf0wQYvZS1gOqE7FAs6IWCi3t7x0ubnarLX/6AguFlHA0Gk7ZrwDZpsiLG4C42bTPTAGaC5y9hAmR2vwoPznMyAzy1VxtSPOP2qzz/9QZW+xq2IMFFlkmpaVHIfMRdHfPl+hAk750ZEQ7V6hJ6cZJGln/5rKugFMOr/95e99jmIvdXGrb+M48oRQ/os8KQZi/D9q+iNQRw8wZlvsl7yQ2jtsfAWNruaHhEPUH2n5Oj5WJT2OTwnMb9HO2LuXq4Zoy6+0Jd9V3MlARYsjluKvWnByDjjakIiUAFQor7TesnlI+KvGubW3ydeM/b2iImOYTPlT4xQL8w1e3Z34UoyU+mKYRrMangHn5p+MsYtmNHMGyRb2/fWmvIRJ6wm95aQW+PiqtrDS3cTKz3GjZ+v6piqkuOMM0cceeDXOIzbGikzupJe94XdVEp5jxf4mhksRP/NZqVLuTXljCQRUrUGH2dq338zRy/KcGcu5jCVRAMhigudOYeAvMBROabJN+QTtLiRYBKzHsk9dyqwfiPijChJmAKVbcDVhtz4+ONMOKU//iyI=
