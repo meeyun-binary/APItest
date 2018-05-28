@@ -1,27 +1,22 @@
 sudo: required
 language: java
-
-
 dist: trusty
-
 cache:
   directories:
-  - $HOME/.m2
-
+  - "$HOME/.m2"
 script:
- - python run_unittests.py;
-
+- python run_unittests.py;
 before_install:
- - sudo pip install -r requirements.txt --ignore-installed six
- - sudo pip install websocket-client
-
+#- openssl aes-256-cbc -K $encrypted_5299dd8ed6f7_key -iv $encrypted_5299dd8ed6f7_iv
+#  -in setting.py.enc -out test_utils/setting.py -d
+- sudo pip install -r requirements.txt --ignore-installed six
+- sudo pip install websocket-client
 after_script:
-  - cat target/surefire-reports/TestSuite.txt
-
+- cat target/surefire-reports/TestSuite.txt
 notifications:
   email:
     recipients:
-      - meeyun@binary.com
-      - my_choong11@hotmail.com
+    - meeyun@binary.com
+    - my_choong11@hotmail.com
     on_success: never
     on_failure: always
