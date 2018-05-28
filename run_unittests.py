@@ -5,8 +5,7 @@ import unittest
 
 sys.path.append(os.path.join(sys.path[0],'..'))
 test_dir = os.path.join(sys.path[0])
-suite = unittest.TestLoader().discover(start_dir=test_dir,pattern='Test*.py')
-#unittest.TextTestRunner(verbosity=1).run(suite)
+suite = unittest.TestLoader().discover(start_dir=test_dir,pattern='TestForgetAll.py')
 
 ret = unittest.TextTestRunner(verbosity=2).run(suite).wasSuccessful()
 

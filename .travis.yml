@@ -7,8 +7,8 @@ cache:
 script:
 - python run_unittests.py;
 before_install:
-- openssl aes-256-cbc -K $encrypted_5299dd8ed6f7_key -iv $encrypted_5299dd8ed6f7_iv
-  -in setting.py.enc -out test_utils/setting.py -d
+#- openssl aes-256-cbc -K $encrypted_5299dd8ed6f7_key -iv $encrypted_5299dd8ed6f7_iv
+#  -in setting.py.enc -out test_utils/setting.py -d
 - sudo pip install -r requirements.txt --ignore-installed six
 - sudo pip install websocket-client
 after_script:
