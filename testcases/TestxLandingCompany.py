@@ -17,6 +17,7 @@ class TestLandingCompany(unittest.TestCase):
 
         self.assertTrue(tu.compare_data(landing_company_input, expected_landing_company), "Unmatch result")
 
+    # test landing company - CR
     def test_landing_company_indonesia(self):
         indonesia = json.dumps({
             "landing_company": "id"
@@ -24,6 +25,7 @@ class TestLandingCompany(unittest.TestCase):
 
         self.assert_landing_company(indonesia, tu.expected_landing_company_id)
 
+    # test landing company - MX
     def test_landing_company_uk(self):
         uk = json.dumps({
             "landing_company": "gb"
@@ -31,6 +33,7 @@ class TestLandingCompany(unittest.TestCase):
 
         self.assert_landing_company(uk, tu.expected_landing_company_gb)
 
+    # test landing company - MLT
     def test_landing_company_be(self):
         belgium = json.dumps({
             "landing_company": "be"
@@ -38,6 +41,7 @@ class TestLandingCompany(unittest.TestCase):
 
         self.assert_landing_company(belgium, tu.expected_landing_company_be)
 
+    # test landing company - MF
     def test_landing_company_es(self):
         spain = json.dumps({
             "landing_company": "es"
@@ -45,6 +49,7 @@ class TestLandingCompany(unittest.TestCase):
 
         self.assert_landing_company(spain, tu.expected_landing_company_es)
 
+    # test landing company - CR china
     def test_landing_company_china(self):
         china = json.dumps({
             "landing_company": "cn"
@@ -52,6 +57,7 @@ class TestLandingCompany(unittest.TestCase):
 
         self.assert_landing_company(china, tu.expected_landing_company_cn)
 
+    # test landing company - CR canada
     def test_landing_company_canada(self):
         canada = json.dumps({
             "landing_company": "ca"
