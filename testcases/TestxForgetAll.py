@@ -36,6 +36,7 @@ class TestxForgetAll(unittest.TestCase):
 
         return proposal
 
+    # test forget all without any subscribe call
     def test_forget_all_ticks_without_subscribe(self):
         json_data = json.dumps({'forget_all': 'ticks'})
         result_js = tu.send_and_receive_ws_x_authorize(json_data)
@@ -62,12 +63,14 @@ class TestxForgetAll(unittest.TestCase):
         self.assertEqual(output_id, forget_output_id)
         self.assertTrue('error' not in forget_output)
 
+    # test forget all for proposal
     def test_forget_all_proposal(self):
         # subscribe proposal API
         proposal_call = self.proposal_call_put_subscribe("R_100", "CALL", 5, "d")
 
         self.assert_forget_all(proposal_call, "proposal", "proposal")
 
+    # test forget all with multiple subscribe call
     def test_forget_all_multiple_proposals(self):
         # subscribe multiple proposal API
         proposal_call = self.proposal_call_put_subscribe("R_100", "CALL", 5, "d")
