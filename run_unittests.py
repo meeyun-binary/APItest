@@ -3,9 +3,10 @@ import sys
 import unittest
 
 
+
 sys.path.append(os.path.join(sys.path[0],'..'))
 test_dir = os.path.join(sys.path[0])
-suite = unittest.TestLoader().discover(start_dir=test_dir,pattern='TestForgetAll.py')
+suite = unittest.TestLoader().discover(start_dir=test_dir,pattern='Testx*.py')
 
 ret = unittest.TextTestRunner(verbosity=2).run(suite).wasSuccessful()
 

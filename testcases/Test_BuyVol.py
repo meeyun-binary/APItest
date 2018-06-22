@@ -17,6 +17,7 @@ class TestBuyContract(unittest.TestCase):
     def tearDown(self):
         # selling contract to avoid hitting maximum number of open contract
         tu.sell_last_bought_contract()
+
         return
 
     def assert_longcode(self, proposal, expected_longcode):
@@ -94,7 +95,7 @@ class TestBuyContract(unittest.TestCase):
 
     def test_buy_no_touch_contract(self):
         current_spot = tu.find_latest_tick(self.symbol)
-        abs_barrier = tu.abs_higher_barrier(current_spot, 5.50, 2)
+        abs_barrier = tu.abs_higher_barrier(current_spot, barrier=10.50, decimal_places=2)
 
         proposal = tu.proposal_touch_no_touch(symbol=self.symbol,
                                               contract_type="NOTOUCH",
@@ -241,7 +242,7 @@ class TestBuyContract(unittest.TestCase):
     def test_buy_reset_call_contract(self):
         proposal = tu.proposal_reset(self.symbol, "RESETCALL")
         expected_longcode = 'Win payout if {} after 5 ticks is strictly higher ' \
-                'than it was at either entry or 2 ticks.' \
+                            'than it was at either entry or 2 ticks.' \
             .format(self.symbol_name)
 
         self.assert_longcode(proposal, expected_longcode)
