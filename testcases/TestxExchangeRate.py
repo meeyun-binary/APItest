@@ -10,12 +10,11 @@ from numpy import isclose as isclose
 class TestxExchangeRate(unittest.TestCase):
 
     def setUp(self):
-        tu.log_out()
+        # list all the available currencies
         self.expected_target_currencies = ["USD", "AUD", "BCH", "BTC", "DAI", "ETH", "EUR", "GBP", "JPY", "LTC"]
         return
 
     def tearDown(self):
-
         return
 
     def send_and_receive_exchange(self, base_currency):
@@ -46,42 +45,52 @@ class TestxExchangeRate(unittest.TestCase):
         # make sure no error returned
         self.assertTrue('error' not in usd_exchange)
 
+    # test exchange currency by using USD as base currency
     def test_exchange_rate_base_USD(self):
         base_currency = "USD"
         self.assert_exchange_rate_API(base_currency)
 
+    # test exchange currency by using AUD as base currency
     def test_exchange_rate_base_AUD(self):
         base_currency = "AUD"
         self.assert_exchange_rate_API(base_currency)
 
+    # test exchange currency by using BCH as base currency
     def test_exchange_rate_base_BCH(self):
         base_currency = "BCH"
         self.assert_exchange_rate_API(base_currency)
 
+    # test exchange currency by using BTC as base currency
     def test_exchange_rate_base_BTC(self):
         base_currency = "BTC"
         self.assert_exchange_rate_API(base_currency)
 
+    # test exchange currency by using DAI as base currency
     def test_exchange_rate_base_DAI(self):
         base_currency = "DAI"
         self.assert_exchange_rate_API(base_currency)
 
+    # test exchange currency by using ETH as base currency
     def test_exchange_rate_base_ETH(self):
         base_currency = "ETH"
         self.assert_exchange_rate_API(base_currency)
 
+    # test exchange currency by using EUR as base currency
     def test_exchange_rate_base_EUR(self):
         base_currency = "EUR"
         self.assert_exchange_rate_API(base_currency)
 
+    # test exchange currency by using GBP as base currency
     def test_exchange_rate_base_GBP(self):
         base_currency = "GBP"
         self.assert_exchange_rate_API(base_currency)
 
+    # test exchange currency by using JPY as base currency
     def test_exchange_rate_base_JPY(self):
         base_currency = "JPY"
         self.assert_exchange_rate_API(base_currency)
 
+    # test exchange currency by using LTC as base currency
     def test_exchange_rate_base_LTC(self):
         base_currency = "LTC"
         self.assert_exchange_rate_API(base_currency)
@@ -110,6 +119,7 @@ class TestxExchangeRate(unittest.TestCase):
 
         return new_list
 
+    # test exchange rate should change during weekdays
     def test_exchange_rate_keep_changing(self):
         base_currency = "USD"
         first_output, second_output = self.check_rate_changes(base_currency)
@@ -139,6 +149,7 @@ class TestxExchangeRate(unittest.TestCase):
             # there should be at least one currency has changing rate
             self.assertTrue(len(same_rates) < 4, "Rates do not change, please check")
 
+    # test the returned rate must be accurate
     def test_exchange_rate_accuracy(self):
         # hard code exchange rates
         expected_rates = [
@@ -162,6 +173,6 @@ class TestxExchangeRate(unittest.TestCase):
                                     not isclose(float(b), float(y), rtol=0.2)]
 
         self.assertEqual(len(possible_inaccurate_rate), 0)
-        # print the currencies which is possibly has incorrect exchange rate
+        # print the currencies which is possibly has incorrect exchange rate (<20% difference)
         if len(possible_inaccurate_rate) != 0:
             print("Possible inaccurate rate: ", possible_inaccurate_rate)
