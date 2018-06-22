@@ -12,6 +12,8 @@ class TestxPayoutCurrencies(unittest.TestCase):
         return
 
     def test_payout_currencies(self):
+        # Note this test case is design for unauthorise call.
+        # If token is authenticated, it will return the currency which available for his account 
         expected_payout_currencies = [
             "AUD",
             "BCH",
