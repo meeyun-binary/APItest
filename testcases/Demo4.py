@@ -16,7 +16,6 @@ class TestWithTestFixture(unittest.TestCase):
     def test_forget_all_msg(self):
         output_msg_type = self.output['msg_type']
         expected = "forget_all"
-
         self.assertEqual(expected, output_msg_type)
 
     def test_forget_all_has_no_error(self):

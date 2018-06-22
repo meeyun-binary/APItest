@@ -1,8 +1,13 @@
 import json
 from websocket import create_connection
 import time
-import setting
+from test_utils import setting as setting
+# import setting
 import datetime
+from functools import wraps
+import errno
+import os
+import signal
 
 
 ws = create_connection("wss://{}/websockets/v3?app_id={}".format(setting.args.server, setting.args.app_id))
@@ -14,6 +19,15 @@ def send_and_receive_ws(json_data):
     ws.send(autho)
     ws.recv()
 
+    ws.send(json_data)
+    result_str = ws.recv()
+
+    # convert to dictionary structure
+    result_js = json.loads(result_str)
+
+    return result_js
+
+def send_and_receive_ws_x_authorize(json_data):
     ws.send(json_data)
     result_str = ws.recv()
 
@@ -42,7 +56,23 @@ def rate_limited(max_per_second):
 
     return decorate
 
+def timeout(seconds=10, error_message=os.strerror(errno.ETIME)):
+    def decorator(func):
+        def _handle_timeout(signum, frame):
+            raise TimeoutError(error_message)
 
+        def wrapper(*args, **kwargs):
+            signal.signal(signal.SIGALRM, _handle_timeout)
+            signal.alarm(seconds)
+            try:
+                result = func(*args, **kwargs)
+            finally:
+                signal.alarm(0)
+            return result
+
+        return wraps(func)(wrapper)
+
+    return decorator
 
 def trading_day(symbol):
     # if symbol is not Volatility, check if today is trading day
@@ -120,3 +150,22 @@ def compare_data(source_data_a, source_data_b):
             compare(source_data_a, source_data_b) and
             compare(source_data_b, source_data_a)
     )
+
+def convert_py_json_output(data):
+# to convert python structure same as json output
+    data_ = json.dumps(data)
+    data = json.loads(data_)
+
+    return data
+
+def log_out():
+    log_out = json.dumps(
+        {
+            "logout": 1
+        }
+    )
+
+    send_and_receive_ws_x_authorize(log_out)
+
+
+
