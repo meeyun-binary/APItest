@@ -17,6 +17,7 @@ before_install:
 - sudo pip install -r requirements.txt --ignore-installed six
 - sudo pip install urllib3[secure]
 - sudo pip install websocket-client
+- sudo pip install websocket
 after_script:
 - cat target/surefire-reports/TestSuite.txt
 notifications:
