@@ -29,6 +29,7 @@ class TestxForget(unittest.TestCase):
 
         return proposal
 
+    # test forget proposal call using its ID
     def test_forget_proposal(self):
         # subscribe proposal API
         proposal_call = self.proposal_call_put_subscribe("R_100", "CALL", 5, "d")
