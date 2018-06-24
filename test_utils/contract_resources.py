@@ -150,6 +150,7 @@ def proposal_lookback(symbol, contract_type):
 
     return proposal_result_js
 
+
 def proposal_reset(symbol, contract_type):
     proposal = json.dumps({"proposal": 1,
                            "amount": "1",
@@ -163,6 +164,39 @@ def proposal_reset(symbol, contract_type):
     proposal_result_js = tu.send_and_receive_ws(proposal)
 
     return proposal_result_js
+
+
+def proposal_callput_spread(symbol, contract_type):
+    proposal = json.dumps({"proposal": 1,
+                           "amount": "10",
+                           "basis": "payout",
+                           "contract_type": contract_type,
+                           "currency": "USD",
+                           "duration": "15",
+                           "duration_unit": "s",
+                           "barrier": "+7.51",
+                           "barrier2": "-6.48",
+                           "symbol": symbol})
+
+    proposal_result_js = tu.send_and_receive_ws(proposal)
+
+    return proposal_result_js
+
+def proposal_highlow_tick(symbol, contract_type):
+    proposal = json.dumps({"proposal": 1,
+                           "amount": "10",
+                           "basis": "payout",
+                           "contract_type": contract_type,
+                           "currency": "USD",
+                           "duration": "5",
+                           "duration_unit": "t",
+                           "selected_tick": "1",
+                           "symbol": symbol})
+
+    proposal_result_js = tu.send_and_receive_ws(proposal)
+
+    return proposal_result_js
+
 
 def sell_last_bought_contract():
     json_contract_id = json.dumps({"portfolio": 1})
@@ -183,7 +217,7 @@ def sell_last_bought_contract():
 
     else:
         result_sell_contract = "No open contract. Skipped selling contract"
-        print (result_sell_contract)
+        print(result_sell_contract)
 
     return result_sell_contract
 
@@ -207,6 +241,7 @@ def abs_lower_barrier2(current_spot, barrier2, decimal_places):
 @tu.rate_limited(0.20)
 def buy(proposal):
     print_if_error(proposal)
+
     id = proposal['proposal']['id']
 
     json_buy = json.dumps({"buy": id,

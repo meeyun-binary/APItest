@@ -1,0 +1,9 @@
+# pyc file
+*.pyc
+
+#ignore
+setting.py
+.cache/
+
+.idea
+.DS_Store

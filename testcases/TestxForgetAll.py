@@ -22,6 +22,7 @@ class TestxForgetAll(unittest.TestCase):
         tu.send_and_receive_ws_x_authorize(json_data)
         json_data = json.dumps({'forget_all': 'proposal'})
         tu.send_and_receive_ws_x_authorize(json_data)
+        time.sleep(1)
 
     def proposal_call_put_subscribe(self, symbol, contract_type, duration, duration_unit):
         proposal = json.dumps({"proposal": 1,
