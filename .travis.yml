@@ -1,5 +1,7 @@
 sudo: required
 language: java
+python:
+  - "3.6"
 dist: trusty
 cache:
   directories:
@@ -9,6 +11,8 @@ script:
 before_install:
 #- openssl aes-256-cbc -K $encrypted_5299dd8ed6f7_key -iv $encrypted_5299dd8ed6f7_iv
 #  -in setting.py.enc -out test_utils/setting.py -d
+- sudo apt-get update
+- sudo apt-get install python3
 - sudo pip install -r requirements.txt --ignore-installed six
 - sudo pip install urllib3[secure]
 - sudo pip install websocket-client
