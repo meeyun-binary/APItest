@@ -44,7 +44,7 @@ class TestxContractFor(unittest.TestCase):
             # to remove available_barriers
             data['contracts_for']['available'][available_item].pop('available_barriers', None)
 
-            # to remove element in forward_starting_options
+            # to remove element in trading_period
             for tpl in trading_period_list:
                 # print(available_item)
                 # print(len(data['contracts_for']['available']))
@@ -157,7 +157,6 @@ class TestxContractFor(unittest.TestCase):
         processed_expected = self.remove_non_deterministic_element(expected)
         self.assert_contracts_for(input, processed_expected)
 
-
     # test mlt contracts_for - vol
     def test_contracts_for_vol_maltainvest(self):
         input = json.dumps({
@@ -197,7 +196,6 @@ class TestxContractFor(unittest.TestCase):
         expected = tu.convert_py_json_output(tu.expected_contracts_for_forex_vanuatu)
         processed_expected = self.remove_non_deterministic_element(expected)
         self.assert_contracts_for(input, processed_expected)
-
 
     # test vanuatu contracts_for - vol
     def test_contracts_for_vol_vanuatu(self):
