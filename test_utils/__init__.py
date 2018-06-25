@@ -5,4 +5,5 @@ from .data import *
 from .asset_index import *
 from .landing_company import *
 from .landing_company_details import *
+from .contracts_for import *
 
