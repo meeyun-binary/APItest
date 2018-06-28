@@ -115,7 +115,7 @@ class TestxContractFor(unittest.TestCase):
         output = tu.send_and_receive_ws_x_authorize(input)
 
         self.assertTrue('error' in output)
-        self.assertEqual(output['error']['message'], 'The symbol is invalid.')
+        self.assertEqual(output['error']['message'], 'Offering is unavailable on this symbol.')
 
     # test mlt contracts_for - vol
     def test_contracts_for_vol_malta(self):
@@ -142,7 +142,7 @@ class TestxContractFor(unittest.TestCase):
         output = tu.send_and_receive_ws_x_authorize(input)
 
         self.assertTrue('error' in output)
-        self.assertEqual(output['error']['message'], 'The symbol is invalid.')
+        self.assertEqual(output['error']['message'], 'Offering is unavailable on this symbol.')
 
     # test mf contracts_for - forex
     def test_contracts_for_forex_maltainvest(self):
@@ -169,7 +169,7 @@ class TestxContractFor(unittest.TestCase):
         output = tu.send_and_receive_ws_x_authorize(input)
 
         self.assertTrue('error' in output)
-        self.assertEqual(output['error']['message'], 'The symbol is invalid.')
+        self.assertEqual(output['error']['message'], 'Offering is unavailable on this symbol.')
 
     # test virtual contracts_for - forex
     def test_contracts_for_forex_virtual(self):
@@ -209,7 +209,7 @@ class TestxContractFor(unittest.TestCase):
         output = tu.send_and_receive_ws_x_authorize(input)
 
         self.assertTrue('error' in output)
-        self.assertEqual(output['error']['message'], 'The symbol is invalid.')
+        self.assertEqual(output['error']['message'], 'Offering is unavailable on this symbol.')
 
     # test contracts_for - multibarrier forex cr
     def test_contracts_for_forex_cr_multibarrier(self):
@@ -239,7 +239,7 @@ class TestxContractFor(unittest.TestCase):
         output = tu.send_and_receive_ws_x_authorize(input)
 
         self.assertTrue('error' in output)
-        self.assertEqual(output['error']['message'], 'The symbol is invalid.')
+        self.assertEqual(output['error']['message'], 'Offering is unavailable on this symbol.')
 
     # test contracts_for - multibarrier vol mx
     def test_contracts_for_vol_iom_multibarrier(self):
@@ -253,7 +253,7 @@ class TestxContractFor(unittest.TestCase):
         output = tu.send_and_receive_ws_x_authorize(input)
 
         self.assertTrue('error' in output)
-        self.assertEqual(output['error']['message'], 'The symbol is invalid.')
+        self.assertEqual(output['error']['message'], 'Offering is unavailable on this symbol.')
 
     # test contracts_for - multibarrier forex mf
     def test_contracts_for_forex_mf_multibarrier(self):
