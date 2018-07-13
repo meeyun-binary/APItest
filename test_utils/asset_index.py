@@ -1302,8 +1302,32 @@ expected_asset_index = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "30m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -1314,8 +1338,32 @@ expected_asset_index = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "30m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -1326,8 +1374,32 @@ expected_asset_index = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -1338,8 +1410,68 @@ expected_asset_index = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
+                    "365d"
+                ]
+            ]
+        ],
+        [
+            "OTC_HSI",
+            "Hong Kong OTC Index",
+            [
+                [
+                    "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
+                    "Rise/Fall",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -1350,8 +1482,32 @@ expected_asset_index = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "30m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -1362,8 +1518,68 @@ expected_asset_index = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
+                    "365d"
+                ]
+            ]
+        ],
+        [
+            "OTC_SSMI",
+            "Swiss OTC Index",
+            [
+                [
+                    "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
+                    "Rise/Fall",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -1374,8 +1590,32 @@ expected_asset_index = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -1386,8 +1626,68 @@ expected_asset_index = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
+                    "365d"
+                ]
+            ]
+        ],
+        [
+            "OTC_NDX",
+            "US Tech 100 OTC Index",
+            [
+                [
+                    "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
+                    "Rise/Fall",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -1398,8 +1698,32 @@ expected_asset_index = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -2674,3533 +2998,4181 @@ expected_asset_index_malta = {
 }
 
 expected_asset_index_maltainvest = {
-    "asset_index": [
+  "asset_index": [
+    [
+      "frxAUDJPY",
+      "AUD/JPY",
+      [
         [
-            "frxAUDJPY",
-            "AUD/JPY",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
         ],
         [
-            "frxAUDUSD",
-            "AUD/USD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
         ],
         [
-            "frxEURAUD",
-            "EUR/AUD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
         ],
         [
-            "frxEURCAD",
-            "EUR/CAD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
         ],
         [
-            "frxEURCHF",
-            "EUR/CHF",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
         ],
         [
-            "frxEURGBP",
-            "EUR/GBP",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxEURJPY",
-            "EUR/JPY",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxEURUSD",
-            "EUR/USD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxGBPAUD",
-            "GBP/AUD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxGBPJPY",
-            "GBP/JPY",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxGBPUSD",
-            "GBP/USD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxUSDCAD",
-            "USD/CAD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxUSDCHF",
-            "USD/CHF",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxUSDJPY",
-            "USD/JPY",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxAUDCAD",
-            "AUD/CAD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "3m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxAUDCHF",
-            "AUD/CHF",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "3m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxAUDNZD",
-            "AUD/NZD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "3m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxEURNZD",
-            "EUR/NZD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "3m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxGBPCAD",
-            "GBP/CAD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "3m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxGBPCHF",
-            "GBP/CHF",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "3m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxGBPNOK",
-            "GBP/NOK",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "1d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5m",
-                    "1d"
-                ]
-            ]
-        ],
-        [
-            "frxGBPNZD",
-            "GBP/NZD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "3m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxGBPPLN",
-            "GBP/PLN",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "1d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5m",
-                    "1d"
-                ]
-            ]
-        ],
-        [
-            "frxNZDJPY",
-            "NZD/JPY",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxNZDUSD",
-            "NZD/USD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "3m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxUSDMXN",
-            "USD/MXN",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxUSDNOK",
-            "USD/NOK",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "1d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5m",
-                    "1d"
-                ]
-            ]
-        ],
-        [
-            "frxUSDPLN",
-            "USD/PLN",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxUSDSEK",
-            "USD/SEK",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "1d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5m",
-                    "1d"
-                ]
-            ]
-        ],
-        [
-            "WLDAUD",
-            "AUD Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "10h"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "10h"
-                ]
-            ]
-        ],
-        [
-            "WLDEUR",
-            "EUR Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "10h"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "10h"
-                ]
-            ]
-        ],
-        [
-            "WLDGBP",
-            "GBP Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "10h"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "10h"
-                ]
-            ]
-        ],
-        [
-            "WLDUSD",
-            "USD Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "10h"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "10h"
-                ]
-            ]
-        ],
-        [
-            "AS51",
-            "Australian Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "BSESENSEX30",
-            "Bombay Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "HSI",
-            "Hong Kong Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "N225",
-            "Japanese Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "STI",
-            "Singapore Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "BFX",
-            "Belgian Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "AEX",
-            "Dutch Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "FCHI",
-            "French Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "GDAXI",
-            "German Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "ISEQ",
-            "Irish Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OBX",
-            "Norwegian Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "TOP40",
-            "South African Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "SSMI",
-            "Swiss Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "SPC",
-            "US Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "DFMGI",
-            "Dubai Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_AEX",
-            "Dutch OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_SX5E",
-            "Euro 50 OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_FCHI",
-            "French OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_GDAXI",
-            "German OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_N225",
-            "Japanese OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_IBEX35",
-            "Spanish OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_FTSE",
-            "UK OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_SPC",
-            "US OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_DJI",
-            "Wall Street OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxXAUUSD",
-            "Gold/USD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxXPDUSD",
-            "Palladium/USD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "1d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxXPTUSD",
-            "Platinum/USD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "1d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxXAGUSD",
-            "Silver/USD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxBROUSD",
-            "Oil/USD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "1d"
-                ]
-            ]
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
         ]
+      ]
     ],
-    "echo_req": {
-        "asset_index": 1,
-        "landing_company": "maltainvest"
-    },
-    "msg_type": "asset_index"
+    [
+      "frxAUDUSD",
+      "AUD/USD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxEURAUD",
+      "EUR/AUD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxEURCAD",
+      "EUR/CAD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxEURCHF",
+      "EUR/CHF",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxEURGBP",
+      "EUR/GBP",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxEURJPY",
+      "EUR/JPY",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxEURUSD",
+      "EUR/USD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxGBPAUD",
+      "GBP/AUD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxGBPJPY",
+      "GBP/JPY",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxGBPUSD",
+      "GBP/USD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxUSDCAD",
+      "USD/CAD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxUSDCHF",
+      "USD/CHF",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxUSDJPY",
+      "USD/JPY",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxAUDCAD",
+      "AUD/CAD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "3m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxAUDCHF",
+      "AUD/CHF",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "3m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxAUDNZD",
+      "AUD/NZD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "3m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxEURNZD",
+      "EUR/NZD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "3m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxGBPCAD",
+      "GBP/CAD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "3m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxGBPCHF",
+      "GBP/CHF",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "3m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxGBPNOK",
+      "GBP/NOK",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "1d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5m",
+          "1d"
+        ]
+      ]
+    ],
+    [
+      "frxGBPNZD",
+      "GBP/NZD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "3m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxGBPPLN",
+      "GBP/PLN",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "1d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5m",
+          "1d"
+        ]
+      ]
+    ],
+    [
+      "frxNZDJPY",
+      "NZD/JPY",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxNZDUSD",
+      "NZD/USD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "3m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxUSDMXN",
+      "USD/MXN",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxUSDNOK",
+      "USD/NOK",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "1d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5m",
+          "1d"
+        ]
+      ]
+    ],
+    [
+      "frxUSDPLN",
+      "USD/PLN",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxUSDSEK",
+      "USD/SEK",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "1d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5m",
+          "1d"
+        ]
+      ]
+    ],
+    [
+      "WLDAUD",
+      "AUD Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "10h"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "10h"
+        ]
+      ]
+    ],
+    [
+      "WLDEUR",
+      "EUR Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "10h"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "10h"
+        ]
+      ]
+    ],
+    [
+      "WLDGBP",
+      "GBP Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "10h"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "10h"
+        ]
+      ]
+    ],
+    [
+      "WLDUSD",
+      "USD Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "10h"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "10h"
+        ]
+      ]
+    ],
+    [
+      "AS51",
+      "Australian Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "BSESENSEX30",
+      "Bombay Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "HSI",
+      "Hong Kong Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "N225",
+      "Japanese Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "STI",
+      "Singapore Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "BFX",
+      "Belgian Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "AEX",
+      "Dutch Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "FCHI",
+      "French Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "GDAXI",
+      "German Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "ISEQ",
+      "Irish Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OBX",
+      "Norwegian Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "TOP40",
+      "South African Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "SSMI",
+      "Swiss Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "SPC",
+      "US Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "DFMGI",
+      "Dubai Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_AEX",
+      "Dutch OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "30m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_SX5E",
+      "Euro 50 OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "30m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_FCHI",
+      "French OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_GDAXI",
+      "German OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_HSI",
+      "Hong Kong OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_N225",
+      "Japanese OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "30m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_IBEX35",
+      "Spanish OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_SSMI",
+      "Swiss OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_FTSE",
+      "UK OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_SPC",
+      "US OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_NDX",
+      "US Tech 100 OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_DJI",
+      "Wall Street OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxXAUUSD",
+      "Gold/USD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxXPDUSD",
+      "Palladium/USD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "1d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxXPTUSD",
+      "Platinum/USD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "1d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxXAGUSD",
+      "Silver/USD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxBROUSD",
+      "Oil/USD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "1d"
+        ]
+      ]
+    ]
+  ],
+  "echo_req": {
+    "asset_index": 1,
+    "landing_company": "maltainvest"
+  },
+  "msg_type": "asset_index"
 }
 
 expected_asset_index_costarica = {
-    "asset_index": [
+  "asset_index": [
+    [
+      "frxAUDJPY",
+      "AUD/JPY",
+      [
         [
-            "frxAUDJPY",
-            "AUD/JPY",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
         ],
         [
-            "frxAUDUSD",
-            "AUD/USD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
         ],
         [
-            "frxEURAUD",
-            "EUR/AUD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
         ],
         [
-            "frxEURCAD",
-            "EUR/CAD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
         ],
         [
-            "frxEURCHF",
-            "EUR/CHF",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
         ],
         [
-            "frxEURGBP",
-            "EUR/GBP",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxEURJPY",
-            "EUR/JPY",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxEURUSD",
-            "EUR/USD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxGBPAUD",
-            "GBP/AUD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxGBPJPY",
-            "GBP/JPY",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxGBPUSD",
-            "GBP/USD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxUSDCAD",
-            "USD/CAD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxUSDCHF",
-            "USD/CHF",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxUSDJPY",
-            "USD/JPY",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxAUDCAD",
-            "AUD/CAD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "3m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxAUDCHF",
-            "AUD/CHF",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "3m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxAUDNZD",
-            "AUD/NZD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "3m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxEURNZD",
-            "EUR/NZD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "3m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxGBPCAD",
-            "GBP/CAD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "3m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxGBPCHF",
-            "GBP/CHF",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "3m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxGBPNOK",
-            "GBP/NOK",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "1d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5m",
-                    "1d"
-                ]
-            ]
-        ],
-        [
-            "frxGBPNZD",
-            "GBP/NZD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "3m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxGBPPLN",
-            "GBP/PLN",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "1d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5m",
-                    "1d"
-                ]
-            ]
-        ],
-        [
-            "frxNZDJPY",
-            "NZD/JPY",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxNZDUSD",
-            "NZD/USD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "3m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxUSDMXN",
-            "USD/MXN",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxUSDNOK",
-            "USD/NOK",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "1d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5m",
-                    "1d"
-                ]
-            ]
-        ],
-        [
-            "frxUSDPLN",
-            "USD/PLN",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxUSDSEK",
-            "USD/SEK",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "1d"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5m",
-                    "1d"
-                ]
-            ]
-        ],
-        [
-            "WLDAUD",
-            "AUD Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "10h"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "10h"
-                ]
-            ]
-        ],
-        [
-            "WLDEUR",
-            "EUR Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "10h"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "10h"
-                ]
-            ]
-        ],
-        [
-            "WLDGBP",
-            "GBP Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "10h"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "10h"
-                ]
-            ]
-        ],
-        [
-            "WLDUSD",
-            "USD Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "10h"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "3m",
-                    "10h"
-                ]
-            ]
-        ],
-        [
-            "AS51",
-            "Australian Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "BSESENSEX30",
-            "Bombay Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "HSI",
-            "Hong Kong Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "N225",
-            "Japanese Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "STI",
-            "Singapore Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "BFX",
-            "Belgian Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "AEX",
-            "Dutch Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "FCHI",
-            "French Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "GDAXI",
-            "German Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "ISEQ",
-            "Irish Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OBX",
-            "Norwegian Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "TOP40",
-            "South African Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "SSMI",
-            "Swiss Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "SPC",
-            "US Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "DFMGI",
-            "Dubai Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_AEX",
-            "Dutch OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_SX5E",
-            "Euro 50 OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_FCHI",
-            "French OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_GDAXI",
-            "German OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_N225",
-            "Japanese OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_IBEX35",
-            "Spanish OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_FTSE",
-            "UK OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_SPC",
-            "US OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_DJI",
-            "Wall Street OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxXAUUSD",
-            "Gold/USD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxXPDUSD",
-            "Palladium/USD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "1d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxXPTUSD",
-            "Platinum/USD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "1d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxXAGUSD",
-            "Silver/USD",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "1d",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "7d",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "7d",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "frxBROUSD",
-            "Oil/USD",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "1d"
-                ]
-            ]
-        ],
-        [
-            "R_10",
-            "Volatility 10 Index",
-            [
-                [
-                    "lookback",
-                    "Lookbacks",
-                    "1m",
-                    "30m"
-                ],
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "2m",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "2m",
-                    "365d"
-                ],
-                [
-                    "digits",
-                    "Digits",
-                    "5t",
-                    "10t"
-                ],
-                [
-                    "asian",
-                    "Asians",
-                    "5t",
-                    "10t"
-                ],
-                [
-                    "reset",
-                    "Reset Call/Reset Put",
-                    "5t",
-                    "2h"
-                ],
-                [
-                    "callputspread",
-                    "Call Spread/Put Spread",
-                    "15s",
-                    "365d"
-                ],
-                [
-                    "highlowticks",
-                    "High/Low Ticks",
-                    "5t",
-                    "5t"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5t",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "R_25",
-            "Volatility 25 Index",
-            [
-                [
-                    "lookback",
-                    "Lookbacks",
-                    "1m",
-                    "30m"
-                ],
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "2m",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "2m",
-                    "365d"
-                ],
-                [
-                    "digits",
-                    "Digits",
-                    "5t",
-                    "10t"
-                ],
-                [
-                    "asian",
-                    "Asians",
-                    "5t",
-                    "10t"
-                ],
-                [
-                    "reset",
-                    "Reset Call/Reset Put",
-                    "5t",
-                    "2h"
-                ],
-                [
-                    "callputspread",
-                    "Call Spread/Put Spread",
-                    "15s",
-                    "365d"
-                ],
-                [
-                    "highlowticks",
-                    "High/Low Ticks",
-                    "5t",
-                    "5t"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5t",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "R_50",
-            "Volatility 50 Index",
-            [
-                [
-                    "lookback",
-                    "Lookbacks",
-                    "1m",
-                    "30m"
-                ],
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "2m",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "2m",
-                    "365d"
-                ],
-                [
-                    "digits",
-                    "Digits",
-                    "5t",
-                    "10t"
-                ],
-                [
-                    "asian",
-                    "Asians",
-                    "5t",
-                    "10t"
-                ],
-                [
-                    "reset",
-                    "Reset Call/Reset Put",
-                    "5t",
-                    "2h"
-                ],
-                [
-                    "callputspread",
-                    "Call Spread/Put Spread",
-                    "15s",
-                    "365d"
-                ],
-                [
-                    "highlowticks",
-                    "High/Low Ticks",
-                    "5t",
-                    "5t"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5t",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "R_75",
-            "Volatility 75 Index",
-            [
-                [
-                    "lookback",
-                    "Lookbacks",
-                    "1m",
-                    "30m"
-                ],
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "2m",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "2m",
-                    "365d"
-                ],
-                [
-                    "digits",
-                    "Digits",
-                    "5t",
-                    "10t"
-                ],
-                [
-                    "asian",
-                    "Asians",
-                    "5t",
-                    "10t"
-                ],
-                [
-                    "reset",
-                    "Reset Call/Reset Put",
-                    "5t",
-                    "2h"
-                ],
-                [
-                    "callputspread",
-                    "Call Spread/Put Spread",
-                    "15s",
-                    "365d"
-                ],
-                [
-                    "highlowticks",
-                    "High/Low Ticks",
-                    "5t",
-                    "5t"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5t",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "R_100",
-            "Volatility 100 Index",
-            [
-                [
-                    "lookback",
-                    "Lookbacks",
-                    "1m",
-                    "30m"
-                ],
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "5t",
-                    "365d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "2m",
-                    "365d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "2m",
-                    "365d"
-                ],
-                [
-                    "digits",
-                    "Digits",
-                    "5t",
-                    "10t"
-                ],
-                [
-                    "asian",
-                    "Asians",
-                    "5t",
-                    "10t"
-                ],
-                [
-                    "reset",
-                    "Reset Call/Reset Put",
-                    "5t",
-                    "2h"
-                ],
-                [
-                    "callputspread",
-                    "Call Spread/Put Spread",
-                    "15s",
-                    "365d"
-                ],
-                [
-                    "highlowticks",
-                    "High/Low Ticks",
-                    "5t",
-                    "5t"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5t",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "RDBEAR",
-            "Bear Market Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "5t",
-                    "1d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "1d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "2m",
-                    "1d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "2m",
-                    "1d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "2m",
-                    "1d"
-                ],
-                [
-                    "digits",
-                    "Digits",
-                    "5t",
-                    "10t"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5t",
-                    "1d"
-                ]
-            ]
-        ],
-        [
-            "RDBULL",
-            "Bull Market Index",
-            [
-                [
-                    "callput",
-                    "Higher/Lower",
-                    "5t",
-                    "1d"
-                ],
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5t",
-                    "1d"
-                ],
-                [
-                    "touchnotouch",
-                    "Touch/No Touch",
-                    "2m",
-                    "1d"
-                ],
-                [
-                    "endsinout",
-                    "Ends Between/Ends Outside",
-                    "2m",
-                    "1d"
-                ],
-                [
-                    "staysinout",
-                    "Stays Between/Goes Outside",
-                    "2m",
-                    "1d"
-                ],
-                [
-                    "digits",
-                    "Digits",
-                    "5t",
-                    "10t"
-                ],
-                [
-                    "callputequal",
-                    "Rise/Fall Equal",
-                    "5t",
-                    "1d"
-                ]
-            ]
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
         ]
+      ]
     ],
-    "echo_req": {
-        "asset_index": 1,
-        "landing_company": "costarica"
-    },
-    "msg_type": "asset_index"
+    [
+      "frxAUDUSD",
+      "AUD/USD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxEURAUD",
+      "EUR/AUD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxEURCAD",
+      "EUR/CAD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxEURCHF",
+      "EUR/CHF",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxEURGBP",
+      "EUR/GBP",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxEURJPY",
+      "EUR/JPY",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxEURUSD",
+      "EUR/USD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxGBPAUD",
+      "GBP/AUD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxGBPJPY",
+      "GBP/JPY",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxGBPUSD",
+      "GBP/USD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxUSDCAD",
+      "USD/CAD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxUSDCHF",
+      "USD/CHF",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxUSDJPY",
+      "USD/JPY",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "1d",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxAUDCAD",
+      "AUD/CAD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "3m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxAUDCHF",
+      "AUD/CHF",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "3m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxAUDNZD",
+      "AUD/NZD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "3m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxEURNZD",
+      "EUR/NZD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "3m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxGBPCAD",
+      "GBP/CAD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "3m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxGBPCHF",
+      "GBP/CHF",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "3m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxGBPNOK",
+      "GBP/NOK",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "1d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5m",
+          "1d"
+        ]
+      ]
+    ],
+    [
+      "frxGBPNZD",
+      "GBP/NZD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "3m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxGBPPLN",
+      "GBP/PLN",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "1d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5m",
+          "1d"
+        ]
+      ]
+    ],
+    [
+      "frxNZDJPY",
+      "NZD/JPY",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxNZDUSD",
+      "NZD/USD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "3m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxUSDMXN",
+      "USD/MXN",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxUSDNOK",
+      "USD/NOK",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "1d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5m",
+          "1d"
+        ]
+      ]
+    ],
+    [
+      "frxUSDPLN",
+      "USD/PLN",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxUSDSEK",
+      "USD/SEK",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "1d"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5m",
+          "1d"
+        ]
+      ]
+    ],
+    [
+      "WLDAUD",
+      "AUD Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "10h"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "10h"
+        ]
+      ]
+    ],
+    [
+      "WLDEUR",
+      "EUR Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "10h"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "10h"
+        ]
+      ]
+    ],
+    [
+      "WLDGBP",
+      "GBP Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "10h"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "10h"
+        ]
+      ]
+    ],
+    [
+      "WLDUSD",
+      "USD Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "10h"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "3m",
+          "10h"
+        ]
+      ]
+    ],
+    [
+      "AS51",
+      "Australian Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "BSESENSEX30",
+      "Bombay Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "HSI",
+      "Hong Kong Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "N225",
+      "Japanese Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "STI",
+      "Singapore Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "BFX",
+      "Belgian Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "AEX",
+      "Dutch Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "FCHI",
+      "French Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "GDAXI",
+      "German Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "ISEQ",
+      "Irish Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OBX",
+      "Norwegian Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "TOP40",
+      "South African Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "SSMI",
+      "Swiss Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "SPC",
+      "US Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "DFMGI",
+      "Dubai Index",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_AEX",
+      "Dutch OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "30m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_SX5E",
+      "Euro 50 OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "30m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_FCHI",
+      "French OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_GDAXI",
+      "German OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_HSI",
+      "Hong Kong OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_N225",
+      "Japanese OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "30m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_IBEX35",
+      "Spanish OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_SSMI",
+      "Swiss OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_FTSE",
+      "UK OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_SPC",
+      "US OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_NDX",
+      "US Tech 100 OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "OTC_DJI",
+      "Wall Street OTC Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "7d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "15m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "7d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxXAUUSD",
+      "Gold/USD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxXPDUSD",
+      "Palladium/USD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "1d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxXPTUSD",
+      "Platinum/USD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "1d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxXAGUSD",
+      "Silver/USD",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "1d",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "1d",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "7d",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "7d",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "frxBROUSD",
+      "Oil/USD",
+      [
+        [
+          "callput",
+          "Rise/Fall",
+          "5m",
+          "1d"
+        ]
+      ]
+    ],
+    [
+      "R_10",
+      "Volatility 10 Index",
+      [
+        [
+          "lookback",
+          "Lookbacks",
+          "1m",
+          "30m"
+        ],
+        [
+          "callput",
+          "Higher/Lower",
+          "5t",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "5t",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "2m",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "2m",
+          "365d"
+        ],
+        [
+          "digits",
+          "Digits",
+          "5t",
+          "10t"
+        ],
+        [
+          "asian",
+          "Asians",
+          "5t",
+          "10t"
+        ],
+        [
+          "reset",
+          "Reset Call/Reset Put",
+          "5t",
+          "2h"
+        ],
+        [
+          "callputspread",
+          "Call Spread/Put Spread",
+          "15s",
+          "365d"
+        ],
+        [
+          "highlowticks",
+          "High/Low Ticks",
+          "5t",
+          "5t"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5t",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "R_25",
+      "Volatility 25 Index",
+      [
+        [
+          "lookback",
+          "Lookbacks",
+          "1m",
+          "30m"
+        ],
+        [
+          "callput",
+          "Higher/Lower",
+          "5t",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "5t",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "2m",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "2m",
+          "365d"
+        ],
+        [
+          "digits",
+          "Digits",
+          "5t",
+          "10t"
+        ],
+        [
+          "asian",
+          "Asians",
+          "5t",
+          "10t"
+        ],
+        [
+          "reset",
+          "Reset Call/Reset Put",
+          "5t",
+          "2h"
+        ],
+        [
+          "callputspread",
+          "Call Spread/Put Spread",
+          "15s",
+          "365d"
+        ],
+        [
+          "highlowticks",
+          "High/Low Ticks",
+          "5t",
+          "5t"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5t",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "R_50",
+      "Volatility 50 Index",
+      [
+        [
+          "lookback",
+          "Lookbacks",
+          "1m",
+          "30m"
+        ],
+        [
+          "callput",
+          "Higher/Lower",
+          "5t",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "5t",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "2m",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "2m",
+          "365d"
+        ],
+        [
+          "digits",
+          "Digits",
+          "5t",
+          "10t"
+        ],
+        [
+          "asian",
+          "Asians",
+          "5t",
+          "10t"
+        ],
+        [
+          "reset",
+          "Reset Call/Reset Put",
+          "5t",
+          "2h"
+        ],
+        [
+          "callputspread",
+          "Call Spread/Put Spread",
+          "15s",
+          "365d"
+        ],
+        [
+          "highlowticks",
+          "High/Low Ticks",
+          "5t",
+          "5t"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5t",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "R_75",
+      "Volatility 75 Index",
+      [
+        [
+          "lookback",
+          "Lookbacks",
+          "1m",
+          "30m"
+        ],
+        [
+          "callput",
+          "Higher/Lower",
+          "5t",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "5t",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "2m",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "2m",
+          "365d"
+        ],
+        [
+          "digits",
+          "Digits",
+          "5t",
+          "10t"
+        ],
+        [
+          "asian",
+          "Asians",
+          "5t",
+          "10t"
+        ],
+        [
+          "reset",
+          "Reset Call/Reset Put",
+          "5t",
+          "2h"
+        ],
+        [
+          "callputspread",
+          "Call Spread/Put Spread",
+          "15s",
+          "365d"
+        ],
+        [
+          "highlowticks",
+          "High/Low Ticks",
+          "5t",
+          "5t"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5t",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "R_100",
+      "Volatility 100 Index",
+      [
+        [
+          "lookback",
+          "Lookbacks",
+          "1m",
+          "30m"
+        ],
+        [
+          "callput",
+          "Higher/Lower",
+          "5t",
+          "365d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "365d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "5t",
+          "365d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "2m",
+          "365d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "2m",
+          "365d"
+        ],
+        [
+          "digits",
+          "Digits",
+          "5t",
+          "10t"
+        ],
+        [
+          "asian",
+          "Asians",
+          "5t",
+          "10t"
+        ],
+        [
+          "reset",
+          "Reset Call/Reset Put",
+          "5t",
+          "2h"
+        ],
+        [
+          "callputspread",
+          "Call Spread/Put Spread",
+          "15s",
+          "365d"
+        ],
+        [
+          "highlowticks",
+          "High/Low Ticks",
+          "5t",
+          "5t"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5t",
+          "365d"
+        ]
+      ]
+    ],
+    [
+      "RDBEAR",
+      "Bear Market Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "5t",
+          "1d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "1d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "2m",
+          "1d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "2m",
+          "1d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "2m",
+          "1d"
+        ],
+        [
+          "digits",
+          "Digits",
+          "5t",
+          "10t"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5t",
+          "1d"
+        ]
+      ]
+    ],
+    [
+      "RDBULL",
+      "Bull Market Index",
+      [
+        [
+          "callput",
+          "Higher/Lower",
+          "5t",
+          "1d"
+        ],
+        [
+          "callput",
+          "Rise/Fall",
+          "5t",
+          "1d"
+        ],
+        [
+          "touchnotouch",
+          "Touch/No Touch",
+          "2m",
+          "1d"
+        ],
+        [
+          "endsinout",
+          "Ends Between/Ends Outside",
+          "2m",
+          "1d"
+        ],
+        [
+          "staysinout",
+          "Stays Between/Goes Outside",
+          "2m",
+          "1d"
+        ],
+        [
+          "digits",
+          "Digits",
+          "5t",
+          "10t"
+        ],
+        [
+          "callputequal",
+          "Rise/Fall Equal",
+          "5t",
+          "1d"
+        ]
+      ]
+    ]
+  ],
+  "echo_req": {
+    "asset_index": 1,
+    "landing_company": "costarica"
+  },
+  "msg_type": "asset_index"
 }
 
 expected_asset_index_virtual = {
@@ -7507,8 +8479,32 @@ expected_asset_index_virtual = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "30m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -7519,8 +8515,32 @@ expected_asset_index_virtual = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "30m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -7531,8 +8551,32 @@ expected_asset_index_virtual = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -7543,8 +8587,68 @@ expected_asset_index_virtual = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
+                    "365d"
+                ]
+            ]
+        ],
+        [
+            "OTC_HSI",
+            "Hong Kong OTC Index",
+            [
+                [
+                    "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
+                    "Rise/Fall",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -7555,8 +8659,32 @@ expected_asset_index_virtual = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "30m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -7567,8 +8695,68 @@ expected_asset_index_virtual = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
+                    "365d"
+                ]
+            ]
+        ],
+        [
+            "OTC_SSMI",
+            "Swiss OTC Index",
+            [
+                [
+                    "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
+                    "Rise/Fall",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -7579,8 +8767,32 @@ expected_asset_index_virtual = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -7591,8 +8803,68 @@ expected_asset_index_virtual = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
+                    "365d"
+                ]
+            ]
+        ],
+        [
+            "OTC_NDX",
+            "US Tech 100 OTC Index",
+            [
+                [
+                    "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
+                    "Rise/Fall",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -7603,8 +8875,32 @@ expected_asset_index_virtual = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -9782,37 +11078,73 @@ expected_asset_index_champion = {
             ]
         ],
         [
-            "OTC_BFX",
-            "Belgian OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_BSESENSEX30",
-            "Bombay OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
             "OTC_AEX",
             "Dutch OTC Index",
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "30m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
+                    "365d"
+                ]
+            ]
+        ],
+        [
+            "OTC_SX5E",
+            "Euro 50 OTC Index",
+            [
+                [
+                    "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
+                    "Rise/Fall",
+                    "30m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -9823,8 +11155,32 @@ expected_asset_index_champion = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -9835,8 +11191,32 @@ expected_asset_index_champion = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -9847,20 +11227,32 @@ expected_asset_index_champion = {
             [
                 [
                     "callput",
-                    "Rise/Fall",
-                    "5m",
+                    "Higher/Lower",
+                    "7d",
                     "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_BIST100",
-            "Istanbul OTC Index",
-            [
+                ],
                 [
                     "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -9871,8 +11263,104 @@ expected_asset_index_champion = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "30m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
+                    "365d"
+                ]
+            ]
+        ],
+        [
+            "OTC_IBEX35",
+            "Spanish OTC Index",
+            [
+                [
+                    "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
+                    "Rise/Fall",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
+                    "365d"
+                ]
+            ]
+        ],
+        [
+            "OTC_SSMI",
+            "Swiss OTC Index",
+            [
+                [
+                    "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
+                    "Rise/Fall",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -9883,8 +11371,32 @@ expected_asset_index_champion = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -9895,20 +11407,32 @@ expected_asset_index_champion = {
             [
                 [
                     "callput",
-                    "Rise/Fall",
-                    "5m",
+                    "Higher/Lower",
+                    "7d",
                     "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_IXIC",
-            "US Tech OTC Index",
-            [
+                ],
                 [
                     "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -9919,8 +11443,32 @@ expected_asset_index_champion = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -11148,37 +12696,73 @@ expected_asset_index_champion_virtual = {
             ]
         ],
         [
-            "OTC_BFX",
-            "Belgian OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_BSESENSEX30",
-            "Bombay OTC Index",
-            [
-                [
-                    "callput",
-                    "Rise/Fall",
-                    "5m",
-                    "365d"
-                ]
-            ]
-        ],
-        [
             "OTC_AEX",
             "Dutch OTC Index",
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "30m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
+                    "365d"
+                ]
+            ]
+        ],
+        [
+            "OTC_SX5E",
+            "Euro 50 OTC Index",
+            [
+                [
+                    "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
+                    "Rise/Fall",
+                    "30m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -11189,8 +12773,32 @@ expected_asset_index_champion_virtual = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -11201,8 +12809,32 @@ expected_asset_index_champion_virtual = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -11213,20 +12845,32 @@ expected_asset_index_champion_virtual = {
             [
                 [
                     "callput",
-                    "Rise/Fall",
-                    "5m",
+                    "Higher/Lower",
+                    "7d",
                     "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_BIST100",
-            "Istanbul OTC Index",
-            [
+                ],
                 [
                     "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -11237,8 +12881,104 @@ expected_asset_index_champion_virtual = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "30m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
+                    "365d"
+                ]
+            ]
+        ],
+        [
+            "OTC_IBEX35",
+            "Spanish OTC Index",
+            [
+                [
+                    "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
+                    "Rise/Fall",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
+                    "365d"
+                ]
+            ]
+        ],
+        [
+            "OTC_SSMI",
+            "Swiss OTC Index",
+            [
+                [
+                    "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
+                    "Rise/Fall",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -11249,8 +12989,32 @@ expected_asset_index_champion_virtual = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -11261,20 +13025,32 @@ expected_asset_index_champion_virtual = {
             [
                 [
                     "callput",
-                    "Rise/Fall",
-                    "5m",
+                    "Higher/Lower",
+                    "7d",
                     "365d"
-                ]
-            ]
-        ],
-        [
-            "OTC_IXIC",
-            "US Tech OTC Index",
-            [
+                ],
                 [
                     "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
@@ -11285,8 +13061,32 @@ expected_asset_index_champion_virtual = {
             [
                 [
                     "callput",
+                    "Higher/Lower",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "callput",
                     "Rise/Fall",
-                    "5m",
+                    "15m",
+                    "365d"
+                ],
+                [
+                    "touchnotouch",
+                    "Touch/No Touch",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "endsinout",
+                    "Ends Between/Ends Outside",
+                    "7d",
+                    "365d"
+                ],
+                [
+                    "staysinout",
+                    "Stays Between/Goes Outside",
+                    "7d",
                     "365d"
                 ]
             ]
