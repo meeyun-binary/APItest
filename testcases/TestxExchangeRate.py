@@ -156,7 +156,7 @@ class TestxExchangeRate(unittest.TestCase):
     def test_exchange_rate_accuracy(self):
         # hard code exchange rates
         expected_rates = [
-            ["BTC", "0.00015438"],
+            ["BTC", "0.00012091"],
             ["BCH", "0.00118947"],
             ["ETH", "0.00200894"],
             ["LTC", "0.01053601"],
@@ -175,7 +175,9 @@ class TestxExchangeRate(unittest.TestCase):
         possible_inaccurate_rate = [a for [a, b], [x, y] in zip(expected_rates, sorted_first_output) if
                                     not isclose(float(b), float(y), rtol=0.2)]
 
-        self.assertEqual(len(possible_inaccurate_rate), 0)
         # print the currencies which is possibly has incorrect exchange rate (<20% difference)
         if len(possible_inaccurate_rate) != 0:
             print("Possible inaccurate rate: ", possible_inaccurate_rate)
+
+        self.assertEqual(len(possible_inaccurate_rate), 0)
+
