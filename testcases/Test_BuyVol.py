@@ -255,7 +255,6 @@ class TestBuyContract(unittest.TestCase):
 
         self.assert_longcode(proposal, expected_longcode)
 
-    @unittest.skip("Not available in production yet")
     def test_buy_call_spread_contract(self):
         proposal = tu.proposal_callput_spread(self.symbol, "CALLSPREAD")
         expected_longcode = 'Win up to USD 10 if {}\'s exit tick is between entry spot minus 6.48 and entry spot ' \
@@ -264,7 +263,6 @@ class TestBuyContract(unittest.TestCase):
 
         self.assert_longcode(proposal, expected_longcode)
 
-    @unittest.skip("Not available in production yet")
     def test_buy_put_spread_contract(self):
         proposal = tu.proposal_callput_spread(self.symbol, "PUTSPREAD")
         expected_longcode = 'Win up to USD 10 if {}\'s exit tick is between entry spot plus 7.51 and entry spot ' \
@@ -272,16 +270,6 @@ class TestBuyContract(unittest.TestCase):
             .format(self.symbol_name)
 
         self.assert_longcode(proposal, expected_longcode)
-
-    # test callput spread when it is disabled in production
-    def test_buy_temp_call_spread_contract(self):
-        # test call spread
-        proposal = tu.proposal_callput_spread(self.symbol, "CALLSPREAD")
-        self.assertEqual(proposal['error']['message'], 'This trade is temporarily unavailable.')
-
-        # test put spread
-        proposal = tu.proposal_callput_spread(self.symbol, "PUTSPREAD")
-        self.assertEqual(proposal['error']['message'], 'This trade is temporarily unavailable.')
 
     def test_buy_high_tick_contract(self):
         proposal = tu.proposal_highlow_tick(self.symbol, "TICKHIGH")

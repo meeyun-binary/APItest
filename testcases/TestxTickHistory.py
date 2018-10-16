@@ -62,14 +62,9 @@ class TestxTickHistory(unittest.TestCase):
         self.assertTrue('error' not in tick_history_output2)
 
     def test_tick_history_custom_start_end(self):
-        # get the current epoch time
+        # # get the current epoch time
         end = int(time.time())
-
-        # get the time in ten minutes ago
-        current_time = datetime.datetime.now()  # use datetime.datetime.utcnow() for UTC time
-        ten_minutes_ago = current_time - datetime.timedelta(minutes=10)
-
-        start = int(ten_minutes_ago.timestamp())  # convert to epoch time
+        start = tu.time_delta(-10,'m')
 
         input = json.dumps(
             {
@@ -130,14 +125,8 @@ class TestxTickHistory(unittest.TestCase):
         self.assertTrue(len(tick_history_output2["history"]["prices"]), 10)
         self.assertTrue('error' not in tick_history_output2)
 
-    @unittest.skip("enable after bug fix")
     def test_tick_history_candle_future_date(self):
-        # get the time in ten minutes ago
-        current_time = datetime.datetime.now()  # use datetime.datetime.utcnow() for UTC time
-        five_years_future = current_time + datetime.timedelta(days=1825)
-
-        end = int(five_years_future.timestamp())  # convert to epoch time
-
+        end = tu.time_delta(+5, 'y')
         input = json.dumps(
             {
                 "ticks_history": "R_50",

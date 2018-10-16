@@ -23,7 +23,8 @@ class TestxPayoutCurrencies(unittest.TestCase):
             "EUR",
             "GBP",
             "LTC",
-            "USD"
+            "USD",
+            "UST"
         ]
 
         payout_currencies = json.dumps({

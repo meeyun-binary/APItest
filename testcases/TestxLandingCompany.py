@@ -11,9 +11,21 @@ class TestLandingCompany(unittest.TestCase):
     def tearDown(self):
         return
 
+
+    def get_prod_output(self, input):
+        # prod
+        tu.prod_ws.send(input)
+        result_str = tu.prod_ws.recv()
+        prod_output = json.loads(result_str)
+
+        return prod_output
+
     def assert_landing_company(self, input, expected_data):
         landing_company_input = tu.send_and_receive_ws_x_authorize(input)
-        expected_landing_company = tu.convert_py_json_output(expected_data)
+
+        expected_output = self.get_prod_output(input)
+        expected_landing_company = tu.convert_py_json_output(expected_output)
+
 
         self.assertTrue(tu.compare_data(landing_company_input, expected_landing_company), "Unmatch result")
 

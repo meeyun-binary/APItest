@@ -49,28 +49,28 @@ class TestxTickStream(unittest.TestCase):
     #     output = tu.ws.recv()
     #     print(output)
 
-    def test_tick_stream_vol(self):
-
-        json_data = json.dumps({
-            "ticks": "R_100",
-            "subscribe": 1
-        })
-        result_js = tu.send_and_receive_ws_x_authorize(json_data)
-
-        count = 1
-        result = []
-
-        while 'error' not in result_js and count <= 5:
-            print("Stream tick number ", count)
-            output = tu.ws.recv()
-            # print(output)
-            result.append(output)
-            count += 1
-
-        self.assertTrue('error' not in result_js)
-        self.assertEqual(count, 6, "Tick is less than 5 in 30 seconds")
-        if count == 1:
-            print("Tick is not streaming at all")
+    # def test_tick_stream_vol(self):
+    #
+    #     json_data = json.dumps({
+    #         "ticks": "R_100",
+    #         "subscribe": 1
+    #     })
+    #     result_js = tu.send_and_receive_ws_x_authorize(json_data)
+    #
+    #     count = 1
+    #     result = []
+    #
+    #     while 'error' not in result_js and count <= 5:
+    #         print("Stream tick number ", count)
+    #         output = tu.ws.recv()
+    #         # print(output)
+    #         result.append(output)
+    #         count += 1
+    #
+    #     self.assertTrue('error' not in result_js)
+    #     self.assertEqual(count, 6, "Tick is less than 5 in 30 seconds")
+    #     if count == 1:
+    #         print("Tick is not streaming at all")
 
     def test_tick_stream_forex(self):
         check_trading_day = datetime.datetime.today().weekday()
@@ -85,6 +85,7 @@ class TestxTickStream(unittest.TestCase):
             count = 1
             result = []
 
+            # while 'error' not in result_js:
             while 'error' not in result_js and count <= 5:
                 print("Stream tick number ", count)
                 output = tu.ws.recv()

@@ -1,7 +1,6 @@
 import unittest
 import test_utils as tu
 import json
-import pprint
 
 
 class TestxContractFor(unittest.TestCase):
@@ -58,11 +57,35 @@ class TestxContractFor(unittest.TestCase):
 
         return data
 
-    def assert_contracts_for(self, input, expected):
-        output = tu.send_and_receive_ws_x_authorize(input)
-        processed_output = self.remove_non_deterministic_element(output)
+    def get_prod_output(self, input):
+        # prod
+        tu.prod_ws.send(input)
+        result_str = tu.prod_ws.recv()
+        prod_output = json.loads(result_str)
 
-        self.assertTrue(tu.compare_data(processed_output, expected))
+        return prod_output
+
+    def assert_contracts_for(self, input):
+        # prod
+        prod_output = self.get_prod_output(input)
+        prod_processed_output = self.remove_non_deterministic_element(prod_output)
+
+        # qa
+        qa_output = tu.send_and_receive_ws_x_authorize(input)
+        qa_processed_output = self.remove_non_deterministic_element(qa_output)
+
+        self.assertTrue(tu.compare_data(qa_processed_output, prod_processed_output))
+
+    def assert_contracts_for_mb(self, input):
+        # prod
+        prod_output = self.get_prod_output(input)
+        prod_processed_output = self.remove_multibarrier_non_deterministic_element(prod_output)
+
+        # qa
+        qa_output = tu.send_and_receive_ws_x_authorize(input)
+        qa_processed_output = self.remove_multibarrier_non_deterministic_element(qa_output)
+
+        self.assertTrue(tu.compare_data(qa_processed_output, prod_processed_output))
 
     # test CR contracts_for - vol
     def test_contracts_for_vol_cr(self):
@@ -73,9 +96,7 @@ class TestxContractFor(unittest.TestCase):
             "landing_company": "costarica"
         })
 
-        expected = tu.convert_py_json_output(tu.expected_contracts_for_vol_cr)
-        processed_expected = self.remove_non_deterministic_element(expected)
-        self.assert_contracts_for(input, processed_expected)
+        self.assert_contracts_for(input)
 
     # test CR contracts_for - forex
     def test_contracts_for_forex_cr(self):
@@ -86,9 +107,7 @@ class TestxContractFor(unittest.TestCase):
             "landing_company": "costarica"
         })
 
-        expected = tu.convert_py_json_output(tu.expected_contracts_for_forex_cr)
-        processed_expected = self.remove_non_deterministic_element(expected)
-        self.assert_contracts_for(input, processed_expected)
+        self.assert_contracts_for(input)
 
     # test mx contracts_for - vol
     def test_contracts_for_vol_iom(self):
@@ -99,9 +118,7 @@ class TestxContractFor(unittest.TestCase):
             "landing_company": "iom"
         })
 
-        expected = tu.convert_py_json_output(tu.expected_contracts_for_vol_iom)
-        processed_expected = self.remove_non_deterministic_element(expected)
-        self.assert_contracts_for(input, processed_expected)
+        self.assert_contracts_for(input)
 
     # test mx contracts_for - forex
     def test_contracts_for_forex_iom(self):
@@ -126,9 +143,7 @@ class TestxContractFor(unittest.TestCase):
             "landing_company": "malta"
         })
 
-        expected = tu.convert_py_json_output(tu.expected_contracts_for_vol_malta)
-        processed_expected = self.remove_non_deterministic_element(expected)
-        self.assert_contracts_for(input, processed_expected)
+        self.assert_contracts_for(input)
 
     # test mlt contracts_for - forex
     def test_contracts_for_forex_malta(self):
@@ -144,6 +159,7 @@ class TestxContractFor(unittest.TestCase):
         self.assertTrue('error' in output)
         self.assertEqual(output['error']['message'], 'Offering is unavailable on this symbol.')
 
+    #
     # test mf contracts_for - forex
     def test_contracts_for_forex_maltainvest(self):
         input = json.dumps({
@@ -153,9 +169,7 @@ class TestxContractFor(unittest.TestCase):
             "landing_company": "maltainvest"
         })
 
-        expected = tu.convert_py_json_output(tu.expected_contracts_for_forex_maltainvest)
-        processed_expected = self.remove_non_deterministic_element(expected)
-        self.assert_contracts_for(input, processed_expected)
+        self.assert_contracts_for(input)
 
     # test mlt contracts_for - vol
     def test_contracts_for_vol_maltainvest(self):
@@ -180,9 +194,7 @@ class TestxContractFor(unittest.TestCase):
             "landing_company": "virtual"
         })
 
-        expected = tu.convert_py_json_output(tu.expected_contracts_for_forex_virtual)
-        processed_expected = self.remove_non_deterministic_element(expected)
-        self.assert_contracts_for(input, processed_expected)
+        self.assert_contracts_for(input)
 
     # test vanuatu contracts_for - forex
     def test_contracts_for_forex_vanuatu(self):
@@ -193,9 +205,10 @@ class TestxContractFor(unittest.TestCase):
             "landing_company": "vanuatu"
         })
 
-        expected = tu.convert_py_json_output(tu.expected_contracts_for_forex_vanuatu)
-        processed_expected = self.remove_non_deterministic_element(expected)
-        self.assert_contracts_for(input, processed_expected)
+        output = tu.send_and_receive_ws_x_authorize(input)
+
+        self.assertTrue('error' in output)
+        self.assertEqual(output['error']['message'], 'Offering is unavailable on this symbol.')
 
     # test vanuatu contracts_for - vol
     def test_contracts_for_vol_vanuatu(self):
@@ -220,12 +233,7 @@ class TestxContractFor(unittest.TestCase):
             "landing_company": "costarica"
         })
 
-        output = tu.send_and_receive_ws_x_authorize(input)
-        processed_output = self.remove_multibarrier_non_deterministic_element(output)
-
-        expected = tu.convert_py_json_output(tu.expected_contracts_for_mb_forex_cr)
-        processed_expected = self.remove_multibarrier_non_deterministic_element(expected)
-        self.assertTrue(tu.compare_data(processed_output, processed_expected))
+        self.assert_contracts_for_mb(input)
 
     # test contracts_for - multibarrier vol cr
     def test_contracts_for_vol_cr_multibarrier(self):
@@ -264,9 +272,4 @@ class TestxContractFor(unittest.TestCase):
             "landing_company": "maltainvest"
         })
 
-        output = tu.send_and_receive_ws_x_authorize(input)
-        processed_output = self.remove_multibarrier_non_deterministic_element(output)
-
-        expected = tu.convert_py_json_output(tu.expected_contracts_for_mb_forex_mf)
-        processed_expected = self.remove_multibarrier_non_deterministic_element(expected)
-        self.assertTrue(tu.compare_data(processed_output, processed_expected))
+        self.assert_contracts_for_mb(input)
