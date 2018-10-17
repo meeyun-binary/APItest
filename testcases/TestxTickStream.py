@@ -85,6 +85,7 @@ class TestxTickStream(unittest.TestCase):
             count = 1
             result = []
 
+            # while 'error' not in result_js:
             while 'error' not in result_js and count <= 5:
                 print("Stream tick number ", count)
                 output = tu.ws.recv()

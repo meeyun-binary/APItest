@@ -2,6 +2,8 @@ import unittest
 import test_utils as tu
 import json
 import copy
+import time
+import datetime
 
 test_data = \
     {
@@ -114,6 +116,26 @@ class TestProposalRise(unittest.TestCase):
         proposal_result = tu.send_and_receive_ws(proposal)
         self.assertEqual(missing_parameter_message[parameter_name], proposal_result["error"]["message"])
 
+    # def test_rise_start_forward_and_duration(self):
+    #     start = tu.time_delta(+1,'h')
+    #
+    #     input = json.dumps(
+    #         {
+    #             "proposal": 1,
+    #             "amount": "10",
+    #             "basis": "payout",
+    #             "contract_type": "CALL",
+    #             "currency": "USD",
+    #             "date_start": start,
+    #             "duration": 20,
+    #             "duration_unit": 'm',
+    #             "symbol": 'R_100'
+    #         }
+    #     )
+    #
+    #     proposal = tu.send_and_receive_ws(input)
+    #
+    #     print (proposal)
 
 for scenario, test_cases in test_data.items():
     if scenario == "valid_parameter":

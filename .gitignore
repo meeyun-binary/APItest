@@ -2,7 +2,7 @@
 *.pyc
 
 #ignore
-setting.py
+*setting.py
 .cache/
 
 .idea

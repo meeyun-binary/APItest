@@ -11,7 +11,7 @@ class TestxExchangeRate(unittest.TestCase):
 
     def setUp(self):
         # list all the available currencies
-        self.expected_target_currencies = ["USD", "AUD", "BCH", "BTC", "DAI", "ETH", "EUR", "GBP", "JPY", "LTC"]
+        self.expected_target_currencies = ["USD", "AUD", "BCH", "BTC", "DAI", "ETH", "EUR", "GBP", "LTC", "UST"]
         return
 
     def tearDown(self):
@@ -40,6 +40,9 @@ class TestxExchangeRate(unittest.TestCase):
         self.assertEqual(usd_exchange["exchange_rates"]["base_currency"], base_currency)
 
         # make sure base to all other currencies are returned
+        # print("now:",set(target_currencies))
+        # print("\nexpected:",set(self.expected_target_currencies))
+
         self.assertTrue(set(target_currencies) == set(self.expected_target_currencies))
 
         # make sure no error returned
@@ -85,11 +88,6 @@ class TestxExchangeRate(unittest.TestCase):
         base_currency = "GBP"
         self.assert_exchange_rate_API(base_currency)
 
-    # test exchange currency by using JPY as base currency
-    def test_exchange_rate_base_JPY(self):
-        base_currency = "JPY"
-        self.assert_exchange_rate_API(base_currency)
-
     # test exchange currency by using LTC as base currency
     def test_exchange_rate_base_LTC(self):
         base_currency = "LTC"
@@ -125,7 +123,7 @@ class TestxExchangeRate(unittest.TestCase):
         first_output, second_output = self.check_rate_changes(base_currency)
         check_trading_day = datetime.datetime.today().weekday()
         if check_trading_day > 4:
-            #TODO exclude japan
+            # TODO exclude japan
             # self.assertTrue(tu.compare_data(first_output, second_output), "Exchange rates should not change")
             print("skip test due to weekend")
 
@@ -152,32 +150,52 @@ class TestxExchangeRate(unittest.TestCase):
             # there should be at least one currency has changing rate
             self.assertTrue(len(same_rates) < 4, "Rates do not change, please check")
 
+    # # test the returned rate must be accurate
+    # def test_exchange_rate_accuracy(self):
+    #     # hard code exchange rates
+    #     expected_rates = [
+    #         ["BTC", "0.00012091"],
+    #         ["BCH", "0.00118947"],
+    #         ["ETH", "0.00200894"],
+    #         ["LTC", "0.01053601"],
+    #         ["GBP", "0.75"],
+    #         ["EUR", "0.86"],
+    #         ["DAI", "1.01"],
+    #         ["AUD", "1.34"],
+    #         ["JPY", "110.00"]
+    #     ]
+    #
+    #     first_output = self.send_and_receive_exchange("USD")
+    #     first_output_rates = first_output["exchange_rates"]["rates"]
+    #     sorted_first_output = sorted(first_output_rates.items(), key=operator.itemgetter(1))
+    #
+    #     # if exchange rate difference is >20%, the currency will be added to the list
+    #     possible_inaccurate_rate = [a for [a, b], [x, y] in zip(expected_rates, sorted_first_output) if
+    #                                 not isclose(float(b), float(y), rtol=0.2)]
+    #
+    #     # print the currencies which is possibly has incorrect exchange rate (<20% difference)
+    #     if len(possible_inaccurate_rate) != 0:
+    #         print("Possible inaccurate rate: ", possible_inaccurate_rate)
+    #
+    #     self.assertEqual(len(possible_inaccurate_rate), 0)
+
+    def get_prod_output(self, input):
+        # prod
+        tu.prod_ws.send(input)
+        result_str = tu.prod_ws.recv()
+        prod_output = json.loads(result_str)
+
+        return prod_output
+
     # test the returned rate must be accurate
     def test_exchange_rate_accuracy(self):
-        # hard code exchange rates
-        expected_rates = [
-            ["BTC", "0.00012091"],
-            ["BCH", "0.00118947"],
-            ["ETH", "0.00200894"],
-            ["LTC", "0.01053601"],
-            ["GBP", "0.75"],
-            ["EUR", "0.86"],
-            ["DAI", "1.01"],
-            ["AUD", "1.34"],
-            ["JPY", "110.00"]
-        ]
+        input = json.dumps({
+            "exchange_rates": 1,
+            "base_currency": "USD"
 
-        first_output = self.send_and_receive_exchange("USD")
-        first_output_rates = first_output["exchange_rates"]["rates"]
-        sorted_first_output = sorted(first_output_rates.items(), key=operator.itemgetter(1))
+        })
 
-        # if exchange rate difference is >20%, the currency will be added to the list
-        possible_inaccurate_rate = [a for [a, b], [x, y] in zip(expected_rates, sorted_first_output) if
-                                    not isclose(float(b), float(y), rtol=0.2)]
+        prod_output = self.get_prod_output(input)
+        output = self.send_and_receive_exchange("USD")
 
-        # print the currencies which is possibly has incorrect exchange rate (<20% difference)
-        if len(possible_inaccurate_rate) != 0:
-            print("Possible inaccurate rate: ", possible_inaccurate_rate)
-
-        self.assertEqual(len(possible_inaccurate_rate), 0)
-
+        self.assertTrue(tu.compare_data(prod_output, output))

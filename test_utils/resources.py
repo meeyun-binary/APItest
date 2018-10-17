@@ -167,5 +167,29 @@ def log_out():
 
     send_and_receive_ws_x_authorize(log_out)
 
+def time_delta(delta, unit):
+    #convert delta to minute
+    if unit == 'm':
+        delta_min = delta
+
+    elif unit == 'd':
+        delta_min = delta * 24 * 60
+
+    elif unit == 'y':
+        delta_min = delta * 365 *24 * 60
+
+    current_time = datetime.datetime.now()  # use datetime.datetime.utcnow() for UTC time
+
+    if delta < 0:
+        time_change = current_time - datetime.timedelta(minutes=abs(delta_min))
+        time_epoch = int(time_change.timestamp())  # convert to epoch time
+
+    else:
+        time_change = current_time + datetime.timedelta(minutes=abs(delta_min))
+        time_epoch = int(time_change.timestamp())
+
+    return time_epoch
+
+
 
 

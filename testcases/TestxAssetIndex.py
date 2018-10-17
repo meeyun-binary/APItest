@@ -1,132 +1,136 @@
+import json
 import unittest
 import test_utils as tu
-import json
 
 
-class TestxAssetIndex(unittest.TestCase):
+class TestAssetIndex(unittest.TestCase):
+    """Compare the Asset Index result with Production"""
 
     def setUp(self):
-        tu.log_out()
         return
 
     def tearDown(self):
         return
 
-    def assert_asset_index(self, input, expected_output_):
-        output = tu.send_and_receive_ws_x_authorize(input)
+    def compare(self, input):
+        # prod
+        json_data = json.dumps(input)
+        tu.prod_ws.send(json_data)
+        result_str = tu.prod_ws.recv()
+        result_prod = json.loads(result_str)
 
-        # to convert python structure same as json output
-        expected_output = tu.convert_py_json_output(expected_output_)
+        # qa
+        json_data = json.dumps(input)
+        result_qa = tu.send_and_receive_ws_x_authorize(json_data)
 
-        self.assertTrue(tu.compare_data(expected_output, output))
+        self.assertEqual(result_qa, result_prod)
 
-    # test asset index without defining landing company
     def test_asset_index(self):
-        asset_index = json.dumps({
+        input = {
             "asset_index": 1
-        })
+        }
 
-        self.assert_asset_index(asset_index, tu.expected_asset_index)
+        self.compare(input)
 
     # test asset index for MX
     def test_asset_index_iom(self):
-        asset_index = json.dumps({
+        input = {
             "asset_index": 1,
             "landing_company": "iom"
 
-        })
+        }
 
-        self.assert_asset_index(asset_index, tu.expected_asset_index_iom)
-    
+        self.compare(input)
+
     # test asset index for MLT
     def test_asset_index_malta(self):
-        asset_index = json.dumps({
+        input = {
             "asset_index": 1,
             "landing_company": "malta"
 
-        })
+        }
 
-        self.assert_asset_index(asset_index, tu.expected_asset_index_malta)
+        self.compare(input)
 
     # test asset index for MF
     def test_asset_index_maltainvest(self):
-        asset_index = json.dumps({
+        input = {
             "asset_index": 1,
             "landing_company": "maltainvest"
 
-        })
+        }
 
-        self.assert_asset_index(asset_index, tu.expected_asset_index_maltainvest)
+        self.compare(input)
 
     # test asset index for CR
     def test_asset_index_costarica(self):
-        asset_index = json.dumps({
+        input = {
             "asset_index": 1,
             "landing_company": "costarica"
 
-        })
+        }
 
-        self.assert_asset_index(asset_index, tu.expected_asset_index_costarica)
-   
+        self.compare(input)
+
     # test asset index for virtual account
     def test_asset_index_virtual(self):
-        asset_index = json.dumps({
+        input = {
             "asset_index": 1,
             "landing_company": "virtual"
 
-        })
+        }
 
-        self.assert_asset_index(asset_index, tu.expected_asset_index_virtual)
+        self.compare(input)
 
     # test asset index for Japan
     def test_asset_index_japan(self):
-        asset_index = json.dumps({
+        input = {
             "asset_index": 1,
             "landing_company": "japan"
 
-        })
+        }
 
-        self.assert_asset_index(asset_index, tu.expected_asset_index_japan)
+        self.compare(input)
 
     # test asset index for Japan virtual account
     def test_asset_index_japan_virtual(self):
-        asset_index = json.dumps({
+        input = {
             "asset_index": 1,
             "landing_company": "japan-virtual"
 
-        })
+        }
 
-        self.assert_asset_index(asset_index, tu.expected_asset_index_japan_virtual)
+        self.compare(input)
 
     # test asset index for vanuatu
     def test_asset_index_vanuatu(self):
-        asset_index = json.dumps({
+        input = {
             "asset_index": 1,
             "landing_company": "vanuatu"
 
-        })
+        }
 
-        self.assert_asset_index(asset_index, tu.expected_asset_index_vanuatu)
+        self.compare(input)
 
     # test asset index for Champion
     def test_asset_index_champion(self):
-        asset_index = json.dumps({
+        input = {
             "asset_index": 1,
             "landing_company": "champion"
 
-        })
+        }
 
-        self.assert_asset_index(asset_index, tu.expected_asset_index_champion)
+        self.compare(input)
 
     # test asset index for Champion virtual
     def test_asset_index_champion_virtual(self):
-        asset_index = json.dumps({
+        input = {
             "asset_index": 1,
             "landing_company": "champion-virtual"
 
-        })
+        }
 
-        self.assert_asset_index(asset_index, tu.expected_asset_index_champion_virtual)
+        self.compare(input)
 
     # test invalid landing company should raise error
     def test_asset_index_invalid_landing_company(self):

@@ -7,14 +7,23 @@ import time
 class TestxLandingCompanyDetails(unittest.TestCase):
 
     def setUp(self):
+        # self.skipTest("-----")
         return
 
     def tearDown(self):
         return
 
+    def get_prod_output(self, input):
+        # prod
+        tu.prod_ws.send(input)
+        result_str = tu.prod_ws.recv()
+        prod_output = json.loads(result_str)
+
+        return prod_output
+
     def assert_landing_company_details(self, input, expected_data):
         landing_company_details = tu.send_and_receive_ws_x_authorize(input)
-        expected_landing_company_details = tu.convert_py_json_output(expected_data)
+        expected_landing_company_details = self.get_prod_output(input)
 
         self.assertTrue(tu.compare_data(landing_company_details, expected_landing_company_details), "Unmatch result")
 
@@ -108,7 +117,7 @@ class TestxLandingCompanyDetails(unittest.TestCase):
 
         self.assert_landing_company_details(champion_virtual, tu.expected_landing_company_details_champion_virtual)
 
-    # test invalid landing company details should raise error 
+    # test invalid landing company details should raise error
     def test_landing_company_details_invalid(self):
         landing_company_details = json.dumps({
             "landing_company_details": "invalid"
