@@ -40,9 +40,6 @@ class TestxExchangeRate(unittest.TestCase):
         self.assertEqual(usd_exchange["exchange_rates"]["base_currency"], base_currency)
 
         # make sure base to all other currencies are returned
-        # print("now:",set(target_currencies))
-        # print("\nexpected:",set(self.expected_target_currencies))
-
         self.assertTrue(set(target_currencies) == set(self.expected_target_currencies))
 
         # make sure no error returned
@@ -197,5 +194,9 @@ class TestxExchangeRate(unittest.TestCase):
 
         prod_output = self.get_prod_output(input)
         output = self.send_and_receive_exchange("USD")
+
+        # remove non deterministic element
+        prod_output['exchange_rates'].pop('date', None)
+        output['exchange_rates'].pop('date', None)
 
         self.assertTrue(tu.compare_data(prod_output, output))

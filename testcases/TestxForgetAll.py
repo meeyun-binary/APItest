@@ -16,6 +16,7 @@ class TestxForgetAll(unittest.TestCase):
         tu.send_and_receive_ws_x_authorize(json_data)
 
     def tearDown(self):
+        tu.log_out()
         # to forget all (this is needed in case some test cases are failing
         # and thus forgot is not done on the test cases)
         json_data = json.dumps({'forget_all': 'ticks'})
