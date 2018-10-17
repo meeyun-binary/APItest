@@ -94,3 +94,5 @@ class TestxForgetAll(unittest.TestCase):
 
         self.assertEqual(len(same_forget_id), 2)
         self.assertTrue('error' not in forget_output)
+
+
